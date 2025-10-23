@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
@@ -9,29 +9,35 @@
     />
     <meta
       name="keywords"
-      content="Cadastro voluntário, ONG, Voluntário, Inscrição"
+      content="cadastro voluntário, ONG, voluntariado, inscrição"
     />
+    <title>Cadastro de Voluntário - Esperança Solidária</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilo.css" />
+    <!-- JS -->
+    <script src="js/main.js" defer></script>
   </head>
   <body>
-    <!-- Cabeçalho da página -->
+    <!-- Cabeçalho -->
     <header>
       <nav>
         <h1>Esperança Solidária</h1>
         <ul>
           <li><a href="index.html">Início</a></li>
-          <li><a href="protejos.html">Projetos</a></li>
-          <li><a href="cadastro.html">Contato</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html" aria-current="page">Cadastre-se</a></li>
         </ul>
       </nav>
     </header>
 
     <!-- Conteúdo Principal -->
     <main>
-      <section>
+      <section class="hero">
         <h2>Cadastro de Voluntário</h2>
         <img
-          src="images/cadastro-banner.jpg"
-          alt="Voluntários Trabalhando juntos em projeto social"
+          src="imagens/cadastro-banner.jpg"
+          alt="Voluntários trabalhando juntos em projeto social"
           width="800"
           height="400"
         />
@@ -45,12 +51,13 @@
           <h3>Formulário de Inscrição</h3>
           <p>
             <strong>Importante:</strong> Todos os campos marcados com
-            <abbr title="Obrigatório">*</abbr> são de preenchimento obrigatório.
+            <abbr title="obrigatório">*</abbr> são de preenchimento obrigatório.
           </p>
 
           <form
             action="https://formsubmit.co/contato@esperancasolidaria.org.br"
             method="POST"
+            novalidate
           >
             <!-- Dados Pessoais -->
             <fieldset>
@@ -98,7 +105,7 @@
                   placeholder="000.000.000-00"
                   required
                   pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
-                  title="Digite seu CPF no formato 000.000.000-00"
+                  title="Digite o CPF no formato: 000.000.000-00"
                   maxlength="14"
                 />
                 <small>Formato: 000.000.000-00</small>
@@ -114,8 +121,8 @@
                   name="telefone"
                   placeholder="(00) 00000-0000"
                   required
-                  pattern="\(\d{2}\) \d{4,5}-\d{4}"
-                  title="Digite seu telefone no formato: (00) 00000-0000"
+                  pattern="\(\d{2}\)\s\d{4,5}-\d{4}"
+                  title="Digite o telefone no formato: (00) 00000-0000"
                   maxlength="15"
                 />
                 <small>Formato: (00) 00000-0000</small>
@@ -128,6 +135,7 @@
                 <input
                   type="date"
                   id="data-nascimento"
+                  name="data-nascimento"
                   required
                   min="1924-01-01"
                   max="2009-12-31"
@@ -138,7 +146,6 @@
               <p>
                 <label>Gênero: <abbr title="obrigatório">*</abbr></label
                 ><br />
-
                 <input
                   type="radio"
                   id="feminino"
@@ -153,17 +160,10 @@
                   id="masculino"
                   name="genero"
                   value="masculino"
-                  required
                 />
                 <label for="masculino">Masculino</label>
 
-                <input
-                  type="radio"
-                  id="outro"
-                  name="genero"
-                  value="outro"
-                  required
-                />
+                <input type="radio" id="outro" name="genero" value="outro" />
                 <label for="outro">Outro</label>
 
                 <input
@@ -171,7 +171,6 @@
                   id="nao-informar"
                   name="genero"
                   value="nao-informar"
-                  required
                 />
                 <label for="nao-informar">Prefiro não informar</label>
               </p>
@@ -191,7 +190,7 @@
                   placeholder="00000-000"
                   required
                   pattern="\d{5}-\d{3}"
-                  title="Digite o CEP no formato 00000-000"
+                  title="Digite o CEP no formato: 00000-000"
                   maxlength="9"
                 />
                 <small>Formato: 00000-000</small>
@@ -206,16 +205,21 @@
                   type="text"
                   id="endereco"
                   name="endereco"
-                  placeholder="Rua, Avenida, etc.."
+                  placeholder="Rua, Avenida, etc."
                   required
                   size="50"
                 />
               </p>
 
               <p>
-                <label for="nuemro">Número: </label><br />
-                <input type="text" id="numero" name="numero placeholder="Número
-                ou S|N" size="10">
+                <label for="numero">Número:</label><br />
+                <input
+                  type="text"
+                  id="numero"
+                  name="numero"
+                  placeholder="Número ou S/N"
+                  size="10"
+                />
               </p>
 
               <p>
@@ -237,7 +241,8 @@
                   type="text"
                   id="bairro"
                   name="bairro"
-                  placeholder="Nome do Bairro"
+                  placeholder="Nome do bairro"
+                  required
                   size="30"
                 />
               </p>
@@ -250,9 +255,9 @@
                   type="text"
                   id="cidade"
                   name="cidade"
-                  placeholder="Nome da Cidade"
-                  size="30"
+                  placeholder="Nome da cidade"
                   required
+                  size="30"
                 />
               </p>
 
@@ -295,16 +300,14 @@
 
             <!-- Informações Profissionais e Acadêmicas -->
             <fieldset>
-              <legend for="escolaridade">
-                Escolaridade: <abbr title="obrigatório">*</abbr>
-              </legend>
+              <legend>Formação e Experiência</legend>
 
               <p>
                 <label for="escolaridade"
                   >Escolaridade: <abbr title="obrigatório">*</abbr></label
                 ><br />
                 <select id="escolaridade" name="escolaridade" required>
-                  <option value="">Selecione a escolaridade</option>
+                  <option value="">Selecione sua escolaridade</option>
                   <option value="fundamental-incompleto">
                     Ensino Fundamental Incompleto
                   </option>
@@ -321,7 +324,7 @@
                   <option value="superior-completo">
                     Ensino Superior Completo
                   </option>
-                  <option value="pos_graduacao">Pós-graduação</option>
+                  <option value="pos-graduacao">Pós-Graduação</option>
                   <option value="mestrado">Mestrado</option>
                   <option value="doutorado">Doutorado</option>
                 </select>
@@ -333,7 +336,7 @@
                   type="text"
                   id="profissao"
                   name="profissao"
-                  placeholder="Ex: Professor, Engenheiro, Médico"
+                  placeholder="Ex: Professor, Engenheiro, Estudante"
                   size="40"
                 />
               </p>
@@ -507,7 +510,7 @@
               </p>
             </fieldset>
 
-            <!-- Como nos Conheceu -->
+            <!-- Como nos conheceu -->
             <fieldset>
               <legend>Como Conheceu a Esperança Solidária?</legend>
 
@@ -602,16 +605,18 @@
               </p>
             </fieldset>
 
-            <!-- Botão de Ação -->
+            <!-- Botões de Ação -->
             <p>
-              <button type="submit">Enviar Cadastro</button>
-              <button type="reset">Limpar Formulário</button>
+              <button class="btn btn-primario" type="submit">
+                Enviar Cadastro
+              </button>
+              <button class="btn" type="reset">Limpar Formulário</button>
             </p>
 
             <p>
               <small
                 >Ao enviar este formulário, você receberá um e-mail de
-                confirmação com os próximos passos. Nossas equipe entrará em
+                confirmação com os próximos passos. Nossa equipe entrará em
                 contato em até 5 dias úteis.</small
               >
             </p>
@@ -623,24 +628,24 @@
           <h3>Próximos Passos</h3>
           <ol>
             <li>
-              <strong>Análise do Cadastro: </strong> Nossa equipe analisará suas
+              <strong>Análise do Cadastro:</strong> Nossa equipe analisará suas
               informações em até 5 dias úteis
             </li>
             <li>
-              <strong>Entrevista: </strong> Você será convidado para uma
-              conversa presencial ou online.
+              <strong>Entrevista:</strong> Você será convidado para uma conversa
+              presencial ou online
             </li>
             <li>
-              <strong>Capacitação Inicial: </strong> Participação obrigatória em
-              treinamento de 4 horas.
+              <strong>Capacitação Inicial:</strong> Participação obrigatória em
+              treinamento de 4 horas
             </li>
             <li>
-              <strong>Início das Atividades: </strong> Você será direcionado
-              para o projeto escolhido
+              <strong>Início das Atividades:</strong> Você será direcionado para
+              o projeto escolhido
             </li>
             <li>
               <strong>Acompanhamento:</strong> Terá suporte contínuo de nossa
-              equipe de coodernação
+              equipe de coordenação
             </li>
           </ol>
         </article>
@@ -703,18 +708,17 @@
     </main>
 
     <!-- Rodapé -->
-
     <footer>
-      <p>&copy; 2025 Esperança Solidária - Todos os direitos reservados.</p>
+      <p>&copy; 2024 Esperança Solidária - Todos os direitos reservados</p>
       <p>
-        CNPJ: 12.345.678/0001-90 | Utilidade Pública Municipal: Lei Nº
-        12.345/2010.
+        CNPJ: 12.345.678/0001-90 | Utilidade Pública Municipal: Lei nº
+        12.345/2010
       </p>
       <nav>
         <ul>
           <li><a href="index.html">Início</a></li>
           <li><a href="projetos.html">Projetos</a></li>
-          <li><a href="cadastro.html">Cadastro-se</a></li>
+          <li><a href="cadastro.html" aria-current="page">Cadastre-se</a></li>
         </ul>
       </nav>
     </footer>

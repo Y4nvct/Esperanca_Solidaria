@@ -5,15 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Conheça os projetos sociais da Esperança Solidária, oportunidade de voluntariado e como fazer doações"
+      content="Conheça os projetos sociais da Esperança Solidária, oportunidades de voluntariado e como fazer doações"
     />
     <meta
       name="keywords"
-      content="Projetos sociais, voluntariado, doações, educação, inclusão social"
+      content="projetos sociais, voluntariado, doações, educação, inclusão social"
     />
     <title>Projetos e Voluntariado - Esperança Solidária</title>
-  </head>
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilo.css" />
+    <!-- JS -->
+    <script src="js/main.js" defer></script>
+  </head>
   <body>
     <!-- Cabeçalho -->
     <header>
@@ -21,7 +25,7 @@
         <h1>Esperança Solidária</h1>
         <ul>
           <li><a href="index.html">Início</a></li>
-          <li><a href="protejos.html">Projetos</a></li>
+          <li><a href="projetos.html" aria-current="page">Projetos</a></li>
           <li><a href="cadastro.html">Cadastre-se</a></li>
         </ul>
       </nav>
@@ -30,7 +34,7 @@
     <!-- Conteúdo Principal -->
     <main>
       <!-- Introdução -->
-      <section>
+      <section class="hero">
         <h2>Nossos Projetos Sociais</h2>
         <p>
           Desenvolvemos projetos educacionais e de inclusão social que
@@ -50,23 +54,23 @@
         <h2>Projetos Educacionais</h2>
 
         <article>
-          <h3>Reforço Escolar Solidária</h3>
+          <h3>Reforço Escolar Solidário</h3>
           <img
             src="imagens/reforco-escolar.jpg"
-            alt="Voluntária-auxiliando crianças com lição de matemática"
+            alt="Voluntária auxiliando criança com lição de matemática"
             width="600"
             height="400"
           />
           <p>
             <strong>Objetivo:</strong> Apoiar crianças e adolescentes com
             dificuldades de aprendizagem através de aulas de reforço em
-            Português, Matemática e Ciência.
+            Português, Matemática e Ciências.
           </p>
 
           <h4>Detalhes do Projeto</h4>
           <dl>
             <dt>Público-Alvo</dt>
-            <dd>Estudantes de 6 a 14 anos de ensino fundamental</dd>
+            <dd>Estudantes de 6 a 14 anos do ensino fundamental</dd>
 
             <dt>Atendimento</dt>
             <dd>450 alunos por semestre</dd>
@@ -75,49 +79,61 @@
             <dd>3 vezes por semana, 2 horas por dia</dd>
 
             <dt>Resultados</dt>
-            <dd>92% de melhoria no desempenho escolar em 2025</dd>
+            <dd>92% de melhoria no desempenho escolar em 2024</dd>
           </dl>
+
+          <h4>Como Ajudar</h4>
+          <ul>
+            <li>
+              Seja voluntário professor (necessário ensino superior em
+              andamento)
+            </li>
+            <li>Doe materiais escolares (cadernos, lápis, livros)</li>
+            <li>Contribua financeiramente para manutenção das salas</li>
+          </ul>
         </article>
 
         <article>
-          <h3>Biblioteca comunitária Esperança</h3>
+          <h3>Biblioteca Comunitária Esperança</h3>
           <img
             src="imagens/biblioteca.jpg"
-            alt="Criança lendo livros na biblioteca comunitária"
+            alt="Crianças lendo livros na biblioteca comunitária"
             width="600"
             height="400"
           />
           <p>
             <strong>Objetivo:</strong> Promover o acesso à leitura e à cultura
             através de um acervo de mais de 8.000 livros, além de atividades de
-            contação de história e clubes de leitura.
+            contação de histórias e clubes de leitura.
           </p>
 
           <h4>Detalhes do Projeto</h4>
           <dl>
-            <dt>acervo</dt>
-            <dd>8.247 livros catalogados (literatura, didático, técnico)</dd>
+            <dt>Acervo</dt>
+            <dd>8.247 livros catalogados (literatura, didáticos, técnicos)</dd>
 
-            <dt>Visitante Mensais</dt>
+            <dt>Visitantes Mensais</dt>
             <dd>1.200 pessoas em média</dd>
 
             <dt>Atividades</dt>
-            <dd>Contação de histórias, clube de leitura, oficina literárias</dd>
+            <dd>
+              Contação de histórias, clubes de leitura, oficinas literárias
+            </dd>
 
             <dt>Empréstimos</dt>
             <dd>3.500 livros emprestados mensalmente</dd>
           </dl>
 
-          <h4>Como ajudar</h4>
+          <h4>Como Ajudar</h4>
           <ul>
             <li>Doe livros em bom estado</li>
-            <li>Seja voluntário bibliotecário ou contador de história</li>
-            <li>Patrocione a compra de novo títulos</li>
+            <li>Seja voluntário bibliotecário ou contador de histórias</li>
+            <li>Patrocine a compra de novos títulos</li>
           </ul>
         </article>
 
-        <articles>
-          <h3>Informática para todos</h3>
+        <article>
+          <h3>Informática para Todos</h3>
           <img
             src="imagens/informatica.jpg"
             alt="Jovens aprendendo programação em laboratório de informática"
@@ -126,8 +142,8 @@
           />
           <p>
             <strong>Objetivo:</strong> Promover inclusão digital através de
-            cursos de informática básica, programação e preparação para de
-            trabalho.
+            cursos de informática básica, programação e preparação para o
+            mercado de trabalho.
           </p>
 
           <h4>Detalhes do Projeto</h4>
@@ -141,10 +157,10 @@
             </dd>
 
             <dt>Infraestrutura</dt>
-            <dd>2 laboratório com 40 computadores</dd>
+            <dd>2 laboratórios com 40 computadores</dd>
 
             <dt>Certificados</dt>
-            <dd>600 certificados em 2025</dd>
+            <dd>680 certificados emitidos em 2024</dd>
           </dl>
 
           <h4>Como Ajudar</h4>
@@ -153,10 +169,10 @@
             <li>Seja voluntário instrutor (conhecimento em TI)</li>
             <li>Patrocine cursos e certificações</li>
           </ul>
-        </articles>
+        </article>
       </section>
 
-      <!-- Projeto de Inclusão Social -->
+      <!-- Projetos de Inclusão Social -->
       <section>
         <h2>Projetos de Inclusão Social</h2>
 
@@ -176,23 +192,24 @@
           <h4>Cursos Disponíveis</h4>
           <ul>
             <li>
-              <strong>Gastronomia:</strong> Cozinheiro, Confeireiro, Salgadeiro.
+              <strong>Gastronomia:</strong> Cozinheiro, confeiteiro, salgadeiro
               (6 meses)
             </li>
             <li>
-              <strong>Beleza:</strong> Cabeleiro, Manicure, Maquiador. (4 meses)
+              <strong>Beleza:</strong> Cabeleireiro, manicure, maquiador (4
+              meses)
             </li>
             <li>
-              <strong>Construção Civil:</strong> Pedreiro, Eletricista, Pintor.
+              <strong>Construção Civil:</strong> Pedreiro, eletricista, pintor
               (5 meses)
             </li>
             <li>
-              <strong>Costura:</strong> Costureiro Industrial, Modelagem. (6
+              <strong>Costura:</strong> Costureiro industrial, modelagem (6
               meses)
             </li>
           </ul>
 
-          <h4>Resultados 2025</h4>
+          <h4>Resultados 2024</h4>
           <dl>
             <dt>Alunos Formados</dt>
             <dd>340 profissionais capacitados</dd>
@@ -200,7 +217,7 @@
             <dt>Taxa de Empregabilidade</dt>
             <dd>78% conseguiram emprego em até 6 meses</dd>
 
-            <dt>Parceiras Empresarias</dt>
+            <dt>Parcerias Empresariais</dt>
             <dd>45 empresas parceiras para contratação</dd>
           </dl>
         </article>
@@ -210,7 +227,7 @@
           <img
             src="imagens/esporte.jpg"
             alt="Crianças jogando futebol em quadra esportiva"
-            wight="600"
+            width="600"
             height="400"
           />
           <p>
@@ -219,11 +236,12 @@
             situações de risco.
           </p>
 
-          <h4>Modalidade Oferecidas</h4>
+          <h4>Modalidades Oferecidas</h4>
           <ul>
-            <li>Futebol (Masculino e Feminino)</li>
+            <li>Futebol (masculino e feminino)</li>
             <li>Vôlei</li>
             <li>Basquete</li>
+            <li>Judô</li>
             <li>Capoeira</li>
           </ul>
 
@@ -232,10 +250,10 @@
             <dd>520 crianças e adolescentes</dd>
 
             <dt>Frequência</dt>
-            <dd>Treino 3 vezes por semana</dd>
+            <dd>Treinos 3 vezes por semana</dd>
 
             <dt>Conquistas</dt>
-            <dd>12 compeonatos regionais em 2025</dd>
+            <dd>12 campeonatos regionais em 2024</dd>
           </dl>
         </article>
 
@@ -250,20 +268,20 @@
           <p>
             <strong>Objetivo:</strong> Desenvolver talentos artísticos e
             promover acesso à cultura através de oficinas de teatro, música,
-            dança e artes plástica.
+            dança e artes plásticas.
           </p>
 
           <h4>Oficinas Disponíveis</h4>
           <ul>
             <li>
-              <strong>Teatro:</strong> Interpretação, Dramaturgia, Drodução
+              <strong>Teatro:</strong> Interpretação, dramaturgia, produção
             </li>
-            <li><strong>Música:</strong> Violão, Teclado, Canto, Percussão</li>
+            <li><strong>Música:</strong> Violão, teclado, canto, percussão</li>
             <li>
-              <strong>Dança:</strong> Ballet, Hip Hop, Dança Contemporânea
+              <strong>Dança:</strong> Ballet, hip hop, dança contemporânea
             </li>
             <li>
-              <strong>Artes Plásticas:</strong> Pintura, Escultura, Grafite
+              <strong>Artes Plásticas:</strong> Pintura, escultura, grafite
             </li>
           </ul>
 
@@ -272,7 +290,7 @@
             <dd>280 alunos nas oficinas</dd>
 
             <dt>Apresentações</dt>
-            <dd>24 apresentações públicas em 2025</dd>
+            <dd>24 apresentações públicas em 2024</dd>
 
             <dt>Instrumentos</dt>
             <dd>60 instrumentos musicais disponíveis</dd>
@@ -280,11 +298,11 @@
         </article>
       </section>
 
-      <!-- Vonlutariado -->
+      <!-- Voluntariado -->
       <section>
         <h2>Seja um Voluntário</h2>
         <img
-          src="imagens/voluntario.jpg"
+          src="imagens/voluntarios.jpg"
           alt="Grupo de voluntários sorrindo juntos após atividade"
           width="700"
           height="450"
@@ -293,26 +311,26 @@
         <article>
           <h3>Por Que Ser Voluntário?</h3>
           <p>
-            O voluntariado é uma experência transformadora tanto para quem ajuda
-            quanto para quem recebe ajuda. Ao dedicar seu tempo e talento, você
-            contribui diretamente para a construção de uma sociedade mais justa
-            e solidária.
+            O voluntariado é uma experiência transformadora tanto para quem
+            ajuda quanto para quem recebe ajuda. Ao dedicar seu tempo e talento,
+            você contribui diretamente para a construção de uma sociedade mais
+            justa e solidária.
           </p>
 
-          <h4>Benefícios de Ser Voluntariado</h4>
+          <h4>Benefícios de Ser Voluntário</h4>
           <ul>
             <li>
               Desenvolvimento de novas habilidades pessoais e profissionais
             </li>
             <li>Ampliação da rede de contatos e networking</li>
-            <li>Certificado de horaas de voluntariado</li>
+            <li>Certificado de horas de voluntariado</li>
             <li>Participação em eventos e capacitações exclusivas</li>
-            <li>Satisfação pessoaç de fazer a diferença</li>
+            <li>Satisfação pessoal de fazer a diferença</li>
           </ul>
         </article>
 
         <article>
-          <h3>Oportunidade de Voluntariado</h3>
+          <h3>Oportunidades de Voluntariado</h3>
 
           <h4>Áreas de Atuação</h4>
           <dl>
@@ -328,21 +346,21 @@
             </dd>
 
             <dt>Esporte e Lazer</dt>
-            <dd>Treinador Esportivo, Monitor de Atividades Recreativas</dd>
+            <dd>Treinador esportivo, monitor de atividades recreativas</dd>
 
             <dt>Arte e Cultura</dt>
-            <dd>Oficineiro de Artes, Músico, Contador de Histórias</dd>
+            <dd>Oficineiro de artes, músico, contador de histórias</dd>
 
             <dt>Administrativo</dt>
             <dd>
-              Apoio em Comunicação, Design, Fotografia, Gestão de Redes Sociais
+              Apoio em comunicação, design, fotografia, gestão de redes sociais
             </dd>
 
             <dt>Eventos</dt>
-            <dd>Organização de Campanhas, Bazares, Eventos de Arrecadação</dd>
+            <dd>Organização de campanhas, bazares, eventos de arrecadação</dd>
           </dl>
 
-          <h4>Requesitos Gerais</h4>
+          <h4>Requisitos Gerais</h4>
           <ul>
             <li>
               Ter no mínimo 16 anos (menores com autorização dos responsáveis)
@@ -354,7 +372,9 @@
 
           <p>
             <strong>Pronto para fazer a diferença?</strong>
-            <a href="cadastro.html">Cadastre-se agora como Voluntário!</a>
+            <a class="btn btn-primario" href="cadastro.html"
+              >Cadastre-se agora como voluntário</a
+            >
           </p>
         </article>
       </section>
@@ -379,70 +399,71 @@
 
           <h4>Formas de Doar</h4>
 
-          <h5>1. Doação Finaceira</h5>
+          <h5>1. Doação Financeira</h5>
           <p>Contribua mensalmente ou faça uma doação única através de:</p>
           <ul>
-            <li><strong>PIX:</strong>doacoes@esperancasolidaria.org.br</li>
+            <li><strong>PIX:</strong> doacoes@esperancasolidaria.org.br</li>
             <li>
               <strong>Transferência Bancária:</strong>
               <ul>
                 <li>
-                  Banco do Brasil - Agência: 1234-5 - Conta Corrente - 56789-0
+                  Banco do Brasil - Agência 1234-5 - Conta Corrente 67890-1
                 </li>
                 <li>CNPJ: 12.345.678/0001-90</li>
               </ul>
             </li>
             <li>
               <strong>Cartão de Crédito:</strong> Doação recorrente ou única (em
-              breve).
+              breve)
             </li>
           </ul>
 
-          <h5>2. Doação de Materias</h5>
+          <h5>2. Doação de Materiais</h5>
           <p>Aceitamos doações de:</p>
           <ul>
-            <li>Materias Escolares (cadernos, lápis, mochilas, livros)</li>
+            <li>Materiais escolares (cadernos, lápis, mochilas, livros)</li>
             <li>
-              Equipamentos de Informática (computadores, notebooks, tablets)
+              Equipamentos de informática (computadores, notebooks, tablets)
             </li>
-            <li>Instrumentos Musicais (violão, teclado, bateria)</li>
-            <li>Materias Esportivos (bolas, uniformes, equipamentos)</li>
-            <li>Alimentos não Pereríveis</li>
-            <li>Roupas e Calçados em bom estado (adulto e infantil)</li>
+            <li>Instrumentos musicais</li>
+            <li>Materiais esportivos (bolas, uniformes, equipamentos)</li>
+            <li>Alimentos não perecíveis</li>
+            <li>Roupas e calçados em bom estado</li>
           </ul>
           <p>
-            <strong>Ponto de Coleta:</strong> Rua da Esperança, Nº 1234 -
-            Centro, São Paulo / SP<br />
-            <strong>Horário:</strong> Segunda a Sexta, 8H às 18H | Sabádos, 9H
-            às 13H
+            <strong>Ponto de Coleta:</strong> Rua da Esperança, 1234 - Centro,
+            São Paulo/SP<br />
+            <strong>Horário:</strong> Segunda a Sexta, 8h às 18h | Sábados, 9h
+            às 13h
           </p>
 
-          <h5>3. Doações de Serviços</h5>
+          <h5>3. Doação de Serviços</h5>
           <p>Empresas podem doar serviços como:</p>
           <ul>
-            <li>Acessorias juridica, contábil ou de marketing</li>
+            <li>Assessoria jurídica, contábil ou de marketing</li>
             <li>Manutenção predial e reformas</li>
-            <li>Transporte e Logística</li>
-            <li>Impressão de materias gráficos</li>
+            <li>Transporte e logística</li>
+            <li>Impressão de materiais gráficos</li>
           </ul>
 
           <h5>4. Nota Fiscal Paulista</h5>
           <p>
             Doe seus créditos da Nota Fiscal Paulista para a Esperança
-            Solidária.
+            Solidária!
           </p>
-          <p><strong>CNPJ:</strong> 123.456.789/0001-00</p>
+          <p><strong>CNPJ:</strong> 12.345.678/0001-90</p>
 
-          <h4>Incetivos Fiscais</h4>
+          <h4>Incentivos Fiscais</h4>
           <p>
-            Pessoas físicas e jurídicas podem deduzir doações de Impos de Renda
+            Pessoas físicas e jurídicas podem deduzir doações do Imposto de
+            Renda:
           </p>
           <ul>
-            <li><strong>Pessoa Física:</strong> até 6% de IR devido</li>
-            <li><strong>Pessoa Jurídica:</strong> até 2% de IR devido</li>
+            <li><strong>Pessoa Física:</strong> até 6% do IR devido</li>
+            <li><strong>Pessoa Jurídica:</strong> até 2% do IR devido</li>
           </ul>
           <p>
-            <em>Emitidos recibo para todas as doações acima de R$ 50,00</em>
+            <em>Emitimos recibo para todas as doações acima de R$ 50,00</em>
           </p>
         </article>
 
@@ -461,12 +482,12 @@
             completo
           </p>
           <p><strong>Progresso:</strong> 320 kits arrecadados (64%)</p>
-          <p><strong>Prazo:</strong> Até 31 de Janeiro de 2026</p>
+          <p><strong>Prazo:</strong> até 31 de janeiro de 2025</p>
           <p>
-            <strong>Cada kit contém:</strong> Mochila, Cardeno, Lápis, Canetas,
-            Borracha, Apontador, Régua, Cola e Tesoura
+            <strong>Cada kit contém:</strong> mochila, cadernos, lápis, canetas,
+            borracha, apontador, régua, cola, tesoura
           </p>
-          <p><strong>Valor do Kit:</strong> R$ 85,00</p>
+          <p><strong>Valor do kit:</strong> R$ 85,00</p>
 
           <h4>Campanha: Reforma da Biblioteca</h4>
           <img
@@ -476,19 +497,19 @@
             height="400"
           />
           <p><strong>Meta:</strong> R$ 50.000,00 para reforma e ampliação</p>
-          <p><strong>Arrecado:</strong> R$ 32.450,00 (65%)</p>
-          <p><strong>Prazo:</strong> Até 31 de Março de 2026</p>
+          <p><strong>Arrecadado:</strong> R$ 32.450,00 (65%)</p>
+          <p><strong>Prazo:</strong> até 30 de março de 2025</p>
           <p>
-            <strong>Melhorias Previstas:</strong> Nova pintura, Mobiliário Novo,
-            Climatização, Ampliação do Acervo, Espaço Infantil Temático
+            <strong>Melhorias previstas:</strong> nova pintura, mobiliário novo,
+            climatização, ampliação do acervo, espaço infantil temático
           </p>
         </article>
 
         <article>
           <h3>Empresas Parceiras</h3>
           <p>
-            Empresas que apoiam nossos projetos através de doações, patrocínio e
-            programas de voluntariado corporativo:
+            Empresas que apoiam nossos projetos através de doações, patrocínios
+            e programas de voluntariado corporativo:
           </p>
           <ul>
             <li>
@@ -500,10 +521,9 @@
             <li>Banco Solidário - Patrocínio de cursos profissionalizantes</li>
           </ul>
           <p>
-            <strong>Sua empresa quer fazer parte deste projeto?</strong>
-            Entre em Contato:
-            <a href="mailto:parcerias@esperancasolidaria.org.br">
-              parcerias@esperancasolidaria.org.br</a
+            <strong>Sua empresa quer fazer parte?</strong> Entre em contato:
+            <a href="mailto:parcerias@esperancasolidaria.org.br"
+              >parcerias@esperancasolidaria.org.br</a
             >
           </p>
         </article>
@@ -587,9 +607,10 @@
             </p>
             <footer>
               —
-              <cite>
-                Ana Paula, voluntária há 2 anos, instrutora de programação
-              </cite>
+              <cite
+                >Ana Paula, voluntária há 2 anos, instrutora de
+                programação</cite
+              >
             </footer>
           </blockquote>
         </article>
@@ -598,15 +619,15 @@
 
     <!-- Rodapé -->
     <footer>
-      <p>&copy; 2025 Esperança Solidária - Todos os Direitos Reservados</p>
+      <p>&copy; 2024 Esperança Solidária - Todos os direitos reservados</p>
       <p>
-        CNPJ: 12.345.678/0001-90 | Utilidade Pública Municipal: Lei Nº
+        CNPJ: 12.345.678/0001-90 | Utilidade Pública Municipal: Lei nº
         12.345/2010
       </p>
       <nav>
         <ul>
           <li><a href="index.html">Início</a></li>
-          <li><a href="protejos.html">Projetos</a></li>
+          <li><a href="projetos.html" aria-current="page">Projetos</a></li>
           <li><a href="cadastro.html">Cadastre-se</a></li>
         </ul>
       </nav>
