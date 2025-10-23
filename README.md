@@ -11,7 +11,7 @@
 
 **Plataforma web completa para organizações não-governamentais brasileiras**
 
-[Demonstração](#demonstração) • [Funcionalidades](#funcionalidades) • [Instalação](#instalação) • [Documentação](#documentação) • [Contribuição](#contribuição)
+[Demonstração](#demonstração) • [Funcionalidades](#-funcionalidades) • [Instalação](#-instalação-e-uso) • [Documentação](#documentação) • [Contribuição](#-contribuição)
 
 </div>
 
@@ -22,14 +22,14 @@
 - [Sobre o Projeto](#-sobre-o-projeto)
 - [Contexto e Relevância](#-contexto-e-relevância)
 - [Funcionalidades](#-funcionalidades)
-- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Tecnologias Utilizadas](#️-tecnologias-utilizadas)
 - [Estrutura do Projeto](#-estrutura-do-projeto)
 - [Instalação e Uso](#-instalação-e-uso)
 - [Padrões e Boas Práticas](#-padrões-e-boas-práticas)
 - [Acessibilidade](#-acessibilidade)
 - [SEO e Performance](#-seo-e-performance)
 - [Validação e Testes](#-validação-e-testes)
-- [Roadmap](#-roadmap)
+- [Roadmap](#️-roadmap)
 - [Contribuição](#-contribuição)
 - [Licença](#-licença)
 - [Contato](#-contato)
