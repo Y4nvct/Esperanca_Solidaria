@@ -16,16 +16,14 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/estilo.css" />
-    <!-- JS com defer -->
-    <script src="js/main.js" defer></script>
   </head>
   <body>
     <!-- Cabeçalho Principal -->
     <header>
-      <nav>
+      <nav class="container">
         <h1>Esperança Solidária</h1>
         <ul>
-          <li><a href="index.html" aria-current="page">Início</a></li>
+          <li><a href="index.html">Início</a></li>
           <li><a href="projetos.html">Projetos</a></li>
           <li><a href="cadastro.html">Cadastre-se</a></li>
         </ul>
@@ -33,7 +31,7 @@
     </header>
 
     <!-- Conteúdo Principal -->
-    <main>
+    <main class="container">
       <!-- Seção Hero -->
       <section class="hero">
         <h2>Transformando Vidas Através da Educação</h2>
@@ -141,16 +139,12 @@
           <dl>
             <dt>Pessoas Atendidas</dt>
             <dd>5.247 beneficiários diretos em nossos programas</dd>
-
             <dt>Voluntários Ativos</dt>
             <dd>312 voluntários dedicados mensalmente</dd>
-
             <dt>Projetos em Andamento</dt>
             <dd>18 projetos ativos em 8 comunidades</dd>
-
             <dt>Taxa de Aprovação Escolar</dt>
             <dd>94% dos alunos aprovados com melhoria no desempenho</dd>
-
             <dt>Inserção no Mercado</dt>
             <dd>78% dos jovens formados conseguiram emprego em até 6 meses</dd>
           </dl>
@@ -167,7 +161,6 @@
             transformação social, com experiência em educação, gestão de
             projetos sociais e desenvolvimento comunitário.
           </p>
-
           <figure>
             <img
               src="imagens/equipe-diretoria.jpg"
@@ -212,7 +205,6 @@
             confiança. Todos os nossos relatórios financeiros e de atividades
             estão disponíveis publicamente.
           </p>
-
           <h4>Documentos Disponíveis</h4>
           <ul>
             <li>
@@ -232,11 +224,10 @@
               >
             </li>
           </ul>
-
           <h4>Distribuição de Recursos 2024</h4>
           <img
             src="imagens/grafico-recursos.jpg"
-            alt="Gráfico de pizza mostrando distribuição de recursos: 65% projetos educacionais, 20% infraestrutura, 10% administrativo, 5% captação"
+            alt="Gráfico de pizza mostrando distribuição de recursos"
             width="600"
             height="400"
           />
@@ -257,11 +248,9 @@
           <address>
             <p><strong>Sede Administrativa</strong></p>
             <p>
-              Rua da Esperança, 1234 - Centro<br />
-              São Paulo - SP<br />
-              CEP: 01234-567
+              Rua da Esperança, 1234 - Centro<br />São Paulo - SP<br />CEP:
+              01234-567
             </p>
-
             <p>
               <strong>Telefone:</strong>
               <a href="tel:+551133334444">(11) 3333-4444</a>
@@ -276,14 +265,11 @@
                 >contato@esperancasolidaria.org.br</a
               >
             </p>
-
             <p>
-              <strong>Horário de Atendimento:</strong><br />
-              Segunda a Sexta: 8h às 18h<br />
-              Sábados: 9h às 13h
+              <strong>Horário de Atendimento:</strong><br />Seg a Sex: 8h–18h |
+              Sáb: 9h–13h
             </p>
           </address>
-
           <h4>Redes Sociais</h4>
           <ul>
             <li>
@@ -325,18 +311,23 @@
 
     <!-- Rodapé -->
     <footer>
-      <p>&copy; 2024 Esperança Solidária - Todos os direitos reservados</p>
-      <p>
-        CNPJ: 12.345.678/0001-90 | Utilidade Pública Municipal: Lei nº
-        12.345/2010
-      </p>
-      <nav>
-        <ul>
-          <li><a href="index.html" aria-current="page">Início</a></li>
-          <li><a href="projetos.html">Projetos</a></li>
-          <li><a href="cadastro.html">Cadastre-se</a></li>
-        </ul>
-      </nav>
+      <div class="container">
+        <p>&copy; 2024 Esperança Solidária - Todos os direitos reservados</p>
+        <p>
+          CNPJ: 12.345.678/0001-90 | Utilidade Pública Municipal: Lei nº
+          12.345/2010
+        </p>
+        <nav>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="cadastro.html">Cadastre-se</a></li>
+          </ul>
+        </nav>
+      </div>
     </footer>
+
+    <!-- JS -->
+    <script src="js/main.js" defer></script>
   </body>
 </html>

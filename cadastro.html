@@ -15,24 +15,22 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/estilo.css" />
-    <!-- JS -->
-    <script src="js/main.js" defer></script>
   </head>
   <body>
     <!-- Cabeçalho -->
     <header>
-      <nav>
+      <nav class="container">
         <h1>Esperança Solidária</h1>
         <ul>
           <li><a href="index.html">Início</a></li>
           <li><a href="projetos.html">Projetos</a></li>
-          <li><a href="cadastro.html" aria-current="page">Cadastre-se</a></li>
+          <li><a href="cadastro.html">Cadastre-se</a></li>
         </ul>
       </nav>
     </header>
 
     <!-- Conteúdo Principal -->
-    <main>
+    <main class="container">
       <section class="hero">
         <h2>Cadastro de Voluntário</h2>
         <img
@@ -42,16 +40,15 @@
           height="400"
         />
         <p>
-          Seja bem-vindo! Estamos muito felizes com seu interesse em fazer parte
-          da nossa equipe de voluntários. Preencha o formulário abaixo com
-          atenção para iniciarmos sua jornada de transformação social conosco.
+          Preencha o formulário abaixo com atenção para iniciarmos sua jornada
+          de transformação social conosco.
         </p>
 
         <article>
           <h3>Formulário de Inscrição</h3>
           <p>
-            <strong>Importante:</strong> Todos os campos marcados com
-            <abbr title="obrigatório">*</abbr> são de preenchimento obrigatório.
+            <strong>Importante:</strong> Campos marcados com
+            <abbr title="obrigatório">*</abbr> são obrigatórios.
           </p>
 
           <form
@@ -144,7 +141,7 @@
               </p>
 
               <p>
-                <label>Gênero: <abbr title="obrigatório">*</abbr></label
+                <span>Gênero: <abbr title="obrigatório">*</abbr></span
                 ><br />
                 <input
                   type="radio"
@@ -154,7 +151,6 @@
                   required
                 />
                 <label for="feminino">Feminino</label>
-
                 <input
                   type="radio"
                   id="masculino"
@@ -162,10 +158,8 @@
                   value="masculino"
                 />
                 <label for="masculino">Masculino</label>
-
                 <input type="radio" id="outro" name="genero" value="outro" />
                 <label for="outro">Outro</label>
-
                 <input
                   type="radio"
                   id="nao-informar"
@@ -298,7 +292,7 @@
               </p>
             </fieldset>
 
-            <!-- Informações Profissionais e Acadêmicas -->
+            <!-- Formação e Experiência -->
             <fieldset>
               <legend>Formação e Experiência</legend>
 
@@ -349,7 +343,7 @@
                   name="habilidades"
                   rows="4"
                   cols="50"
-                  placeholder="Descreva suas habilidades, conhecimentos e experiências que podem contribuir com nossos projetos (ex: informática, idiomas, música, esportes, etc.)"
+                  placeholder="Descreva suas habilidades, conhecimentos e experiências..."
                 ></textarea>
               </p>
             </fieldset>
@@ -359,14 +353,10 @@
               <legend>Interesse em Voluntariado</legend>
 
               <p>
-                <label
-                  >Áreas de Interesse: <abbr title="obrigatório">*</abbr></label
+                <span
+                  >Áreas de Interesse: <abbr title="obrigatório">*</abbr></span
                 ><br />
-                <small
-                  >Selecione uma ou mais áreas em que gostaria de atuar como
-                  voluntário</small
-                ><br /><br />
-
+                <small>Selecione uma ou mais áreas</small><br /><br />
                 <input
                   type="checkbox"
                   id="educacao"
@@ -374,10 +364,8 @@
                   value="educacao"
                   required
                 />
-                <label for="educacao"
-                  >Educação (reforço escolar, biblioteca)</label
+                <label for="educacao">Educação (reforço, biblioteca)</label
                 ><br />
-
                 <input
                   type="checkbox"
                   id="informatica"
@@ -385,7 +373,6 @@
                   value="informatica"
                 />
                 <label for="informatica">Informática e Tecnologia</label><br />
-
                 <input
                   type="checkbox"
                   id="profissionalizante"
@@ -395,7 +382,6 @@
                 <label for="profissionalizante"
                   >Cursos Profissionalizantes</label
                 ><br />
-
                 <input
                   type="checkbox"
                   id="esporte"
@@ -403,7 +389,6 @@
                   value="esporte"
                 />
                 <label for="esporte">Esporte e Recreação</label><br />
-
                 <input
                   type="checkbox"
                   id="arte"
@@ -411,17 +396,13 @@
                   value="arte"
                 />
                 <label for="arte">Arte e Cultura</label><br />
-
                 <input
                   type="checkbox"
                   id="administrativo"
                   name="areas-interesse"
                   value="administrativo"
                 />
-                <label for="administrativo"
-                  >Administrativo (comunicação, design, gestão)</label
-                ><br />
-
+                <label for="administrativo">Administrativo</label><br />
                 <input
                   type="checkbox"
                   id="eventos"
@@ -429,7 +410,6 @@
                   value="eventos"
                 />
                 <label for="eventos">Organização de Eventos</label><br />
-
                 <input
                   type="checkbox"
                   id="outros"
@@ -445,40 +425,36 @@
                   <abbr title="obrigatório">*</abbr></label
                 ><br />
                 <select id="disponibilidade" name="disponibilidade" required>
-                  <option value="">Selecione sua disponibilidade</option>
+                  <option value="">Selecione</option>
                   <option value="4-horas">4 horas por semana</option>
                   <option value="8-horas">8 horas por semana</option>
                   <option value="12-horas">12 horas por semana</option>
                   <option value="16-horas">16 horas ou mais por semana</option>
-                  <option value="eventual">
-                    Disponibilidade eventual (eventos e campanhas)
-                  </option>
+                  <option value="eventual">Eventual (eventos/campanhas)</option>
                 </select>
               </p>
 
               <p>
                 <label for="periodo">Período Preferencial:</label><br />
                 <select id="periodo" name="periodo">
-                  <option value="">Selecione um período</option>
-                  <option value="manha">Manhã (8h às 12h)</option>
-                  <option value="tarde">Tarde (13h às 17h)</option>
-                  <option value="noite">Noite (18h às 21h)</option>
+                  <option value="">Selecione</option>
+                  <option value="manha">Manhã (8h–12h)</option>
+                  <option value="tarde">Tarde (13h–17h)</option>
+                  <option value="noite">Noite (18h–21h)</option>
                   <option value="fim-de-semana">Finais de semana</option>
                   <option value="flexivel">Flexível</option>
                 </select>
               </p>
 
               <p>
-                <label for="motivacao"
-                  >Por que você quer ser voluntário na Esperança
-                  Solidária?</label
+                <label for="motivacao">Por que você quer ser voluntário?</label
                 ><br />
                 <textarea
                   id="motivacao"
                   name="motivacao"
                   rows="5"
                   cols="50"
-                  placeholder="Conte-nos um pouco sobre sua motivação para ser voluntário..."
+                  placeholder="Conte-nos sua motivação..."
                 ></textarea>
               </p>
 
@@ -490,22 +466,21 @@
                   id="experiencia-voluntariado"
                   name="experiencia-voluntariado"
                 >
-                  <option value="">Selecione uma opção</option>
+                  <option value="">Selecione</option>
                   <option value="sim">Sim</option>
                   <option value="nao">Não</option>
                 </select>
               </p>
 
               <p>
-                <label for="detalhes-experiencia"
-                  >Se sim, conte-nos sobre sua experiência:</label
+                <label for="detalhes-experiencia">Se sim, conte-nos:</label
                 ><br />
                 <textarea
                   id="detalhes-experiencia"
                   name="detalhes-experiencia"
                   rows="4"
                   cols="50"
-                  placeholder="Descreva brevemente suas experiências anteriores com voluntariado..."
+                  placeholder="Descreva suas experiências anteriores..."
                 ></textarea>
               </p>
             </fieldset>
@@ -513,18 +488,15 @@
             <!-- Como nos conheceu -->
             <fieldset>
               <legend>Como Conheceu a Esperança Solidária?</legend>
-
               <p>
                 <label for="como-conheceu"
-                  >Como ficou sabendo da nossa ONG?
+                  >Selecione uma opção:
                   <abbr title="obrigatório">*</abbr></label
                 ><br />
                 <select id="como-conheceu" name="como-conheceu" required>
-                  <option value="">Selecione uma opção</option>
+                  <option value="">Selecione</option>
                   <option value="redes-sociais">Redes Sociais</option>
-                  <option value="indicacao">
-                    Indicação de amigos/familiares
-                  </option>
+                  <option value="indicacao">Indicação</option>
                   <option value="internet">Pesquisa na Internet</option>
                   <option value="evento">Evento ou palestra</option>
                   <option value="midia">Mídia (TV, rádio, jornal)</option>
@@ -539,7 +511,6 @@
             <!-- Termos e Condições -->
             <fieldset>
               <legend>Termos e Condições</legend>
-
               <p>
                 <input
                   type="checkbox"
@@ -547,12 +518,11 @@
                   name="termo-veracidade"
                   required
                 />
-                <label for="termo-veracidade">
-                  Declaro que as informações fornecidas são verdadeiras
-                  <abbr title="obrigatório">*</abbr>
-                </label>
+                <label for="termo-veracidade"
+                  >Declaro que as informações fornecidas são verdadeiras
+                  <abbr title="obrigatório">*</abbr></label
+                >
               </p>
-
               <p>
                 <input
                   type="checkbox"
@@ -560,12 +530,11 @@
                   name="termo-compromisso"
                   required
                 />
-                <label for="termo-compromisso">
-                  Comprometo-me a participar da capacitação inicial obrigatória
-                  <abbr title="obrigatório">*</abbr>
-                </label>
+                <label for="termo-compromisso"
+                  >Comprometo-me a participar da capacitação inicial
+                  <abbr title="obrigatório">*</abbr></label
+                >
               </p>
-
               <p>
                 <input
                   type="checkbox"
@@ -573,12 +542,11 @@
                   name="termo-disponibilidade"
                   required
                 />
-                <label for="termo-disponibilidade">
-                  Comprometo-me a cumprir a disponibilidade informada por no
-                  mínimo 6 meses <abbr title="obrigatório">*</abbr>
-                </label>
+                <label for="termo-disponibilidade"
+                  >Comprometo-me a cumprir a disponibilidade informada por 6
+                  meses <abbr title="obrigatório">*</abbr></label
+                >
               </p>
-
               <p>
                 <input
                   type="checkbox"
@@ -586,22 +554,20 @@
                   name="termo-lgpd"
                   required
                 />
-                <label for="termo-lgpd">
-                  Autorizo o uso dos meus dados pessoais conforme a Lei Geral de
-                  Proteção de Dados (LGPD) <abbr title="obrigatório">*</abbr>
-                </label>
+                <label for="termo-lgpd"
+                  >Autorizo o uso dos meus dados conforme a LGPD
+                  <abbr title="obrigatório">*</abbr></label
+                >
               </p>
-
               <p>
                 <input
                   type="checkbox"
                   id="termo-comunicacao"
                   name="termo-comunicacao"
                 />
-                <label for="termo-comunicacao">
-                  Aceito receber comunicações sobre eventos, campanhas e
-                  novidades da ONG
-                </label>
+                <label for="termo-comunicacao"
+                  >Aceito receber comunicações da ONG</label
+                >
               </p>
             </fieldset>
 
@@ -615,112 +581,34 @@
 
             <p>
               <small
-                >Ao enviar este formulário, você receberá um e-mail de
-                confirmação com os próximos passos. Nossa equipe entrará em
-                contato em até 5 dias úteis.</small
+                >Após enviar, você receberá um e-mail com os próximos passos.
+                Retorno em até 5 dias úteis.</small
               >
             </p>
           </form>
-        </article>
-
-        <!-- Informações Adicionais -->
-        <article>
-          <h3>Próximos Passos</h3>
-          <ol>
-            <li>
-              <strong>Análise do Cadastro:</strong> Nossa equipe analisará suas
-              informações em até 5 dias úteis
-            </li>
-            <li>
-              <strong>Entrevista:</strong> Você será convidado para uma conversa
-              presencial ou online
-            </li>
-            <li>
-              <strong>Capacitação Inicial:</strong> Participação obrigatória em
-              treinamento de 4 horas
-            </li>
-            <li>
-              <strong>Início das Atividades:</strong> Você será direcionado para
-              o projeto escolhido
-            </li>
-            <li>
-              <strong>Acompanhamento:</strong> Terá suporte contínuo de nossa
-              equipe de coordenação
-            </li>
-          </ol>
-        </article>
-
-        <article>
-          <h3>Dúvidas Frequentes</h3>
-
-          <h4>Preciso ter experiência prévia?</h4>
-          <p>
-            Não! Oferecemos capacitação inicial e acompanhamento contínuo. O
-            mais importante é ter vontade de ajudar e comprometimento.
-          </p>
-
-          <h4>Qual a idade mínima para ser voluntário?</h4>
-          <p>
-            A idade mínima é 16 anos. Menores de 18 anos precisam de autorização
-            dos responsáveis.
-          </p>
-
-          <h4>Posso escolher o horário?</h4>
-          <p>
-            Sim! Trabalhamos para adequar sua disponibilidade às necessidades
-            dos projetos.
-          </p>
-
-          <h4>Recebo certificado?</h4>
-          <p>
-            Sim! Emitimos certificado de horas de voluntariado para todos os
-            voluntários ativos.
-          </p>
-
-          <h4>Posso parar quando quiser?</h4>
-          <p>
-            Sim, mas pedimos comprometimento mínimo de 6 meses para garantir
-            continuidade aos projetos.
-          </p>
-        </article>
-
-        <article>
-          <h3>Contato</h3>
-          <p>Ainda tem dúvidas? Entre em contato conosco:</p>
-          <address>
-            <p>
-              <strong>E-mail:</strong>
-              <a href="mailto:voluntarios@esperancasolidaria.org.br"
-                >voluntarios@esperancasolidaria.org.br</a
-              >
-            </p>
-            <p>
-              <strong>Telefone:</strong>
-              <a href="tel:+551133334444">(11) 3333-4444</a>
-            </p>
-            <p>
-              <strong>WhatsApp:</strong>
-              <a href="https://wa.me/5511999998888">(11) 99999-8888</a>
-            </p>
-          </address>
         </article>
       </section>
     </main>
 
     <!-- Rodapé -->
     <footer>
-      <p>&copy; 2024 Esperança Solidária - Todos os direitos reservados</p>
-      <p>
-        CNPJ: 12.345.678/0001-90 | Utilidade Pública Municipal: Lei nº
-        12.345/2010
-      </p>
-      <nav>
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="projetos.html">Projetos</a></li>
-          <li><a href="cadastro.html" aria-current="page">Cadastre-se</a></li>
-        </ul>
-      </nav>
+      <div class="container">
+        <p>&copy; 2025 Esperança Solidária - Todos os direitos reservados</p>
+        <p>
+          CNPJ: 12.345.678/0001-90 | Utilidade Pública Municipal: Lei nº
+          12.345/2010
+        </p>
+        <nav>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="cadastro.html">Cadastre-se</a></li>
+          </ul>
+        </nav>
+      </div>
     </footer>
+
+    <!-- JS -->
+    <script src="js/main.js" defer></script>
   </body>
 </html>
