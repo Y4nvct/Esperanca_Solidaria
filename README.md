@@ -19,20 +19,20 @@
 
 ## 📋 Índice
 
-- [Sobre o Projeto](#sobre-o-projeto)
-- [Contexto e Relevância](#contexto-e-relevância)
-- [Funcionalidades](#funcionalidades)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Estrutura do Projeto](#estrutura-do-projeto)
-- [Instalação e Uso](#instalação-e-uso)
-- [Padrões e Boas Práticas](#padrões-e-boas-práticas)
-- [Acessibilidade](#acessibilidade)
-- [SEO e Performance](#seo-e-performance)
-- [Validação e Testes](#validação-e-testes)
-- [Roadmap](#roadmap)
-- [Contribuição](#contribuição)
-- [Licença](#licença)
-- [Contato](#contato)
+- [Sobre o Projeto](#-sobre-o-projeto)
+- [Contexto e Relevância](#-contexto-e-relevância)
+- [Funcionalidades](#-funcionalidades)
+- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Estrutura do Projeto](#-estrutura-do-projeto)
+- [Instalação e Uso](#-instalação-e-uso)
+- [Padrões e Boas Práticas](#-padrões-e-boas-práticas)
+- [Acessibilidade](#-acessibilidade)
+- [SEO e Performance](#-seo-e-performance)
+- [Validação e Testes](#-validação-e-testes)
+- [Roadmap](#-roadmap)
+- [Contribuição](#-contribuição)
+- [Licença](#-licença)
+- [Contato](#-contato)
 
 ---
 
