@@ -1,0 +1,17 @@
+:root 
+{
+  --azul: #2563eb;
+    --verde: #16a34a;
+    --cinza-900: #0f172a;
+    --cinza-700: #334155;
+    --cinza-500: #64748b;
+    --cinza-200: #e2e8f0;
+    --cinza-100: #f1f5f9;
+    --branco: #ffffff;
+} 
+
+*{box-sizing: border-box}
+html{scroll-behavior:smooth}
+body{
+  margin: 0;
+}
