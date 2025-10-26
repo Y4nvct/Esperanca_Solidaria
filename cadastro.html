@@ -1,614 +1,374 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Cadastre-se como voluntário na ONG Esperança Solidária e faça parte da transformação social"
-    />
-    <meta
-      name="keywords"
-      content="cadastro voluntário, ONG, voluntariado, inscrição"
-    />
-    <title>Cadastro de Voluntário - Esperança Solidária</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/estilo.css" />
-  </head>
-  <body>
-    <!-- Cabeçalho -->
-    <header>
-      <nav class="container">
-        <h1>Esperança Solidária</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Cadastre-se como voluntário na ONG Esperança Solidária e faça parte da transformação social" />
+  <meta name="keywords" content="cadastro voluntário, ONG, voluntariado, inscrição" />
+  <title>Cadastro de Voluntário - Esperança Solidária</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/estilo.css" />
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <nav class="container">
+      <h1>Esperança Solidária</h1>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="cadastro.html">Cadastre-se</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="container">
+    <section class="hero">
+      <h2>Cadastro de Voluntário</h2>
+      <img src="imagens/cadastro-banner.jpg" alt="Voluntários trabalhando juntos em projeto social" width="800"
+        height="400" />
+      <p>
+        Preencha o formulário abaixo com atenção para iniciarmos sua jornada
+        de transformação social conosco.
+      </p>
+
+      <article>
+        <h3>Formulário de Inscrição</h3>
+        <p>
+          <strong>Importante:</strong> Campos marcados com
+          <abbr title="obrigatório">*</abbr> são obrigatórios.
+        </p>
+
+        <form action="https://formsubmit.co/contato@esperancasolidaria.org.br" method="POST" novalidate>
+          <!-- Dados Pessoais -->
+          <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <p>
+              <label for="nome">Nome Completo: <abbr title="obrigatório">*</abbr></label><br />
+              <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required minlength="3"
+                maxlength="100" pattern="[A-Za-zÀ-ÿ\s]+" title="Digite apenas letras e espaços" size="50" />
+            </p>
+
+            <p>
+              <label for="email">E-mail: <abbr title="obrigatório">*</abbr></label><br />
+              <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required size="50" />
+            </p>
+
+            <p>
+              <label for="cpf">CPF: <abbr title="obrigatório">*</abbr></label><br />
+              <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required
+                pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite o CPF no formato: 000.000.000-00" maxlength="14" />
+              <small>Formato: 000.000.000-00</small>
+            </p>
+
+            <p>
+              <label for="telefone">Telefone: <abbr title="obrigatório">*</abbr></label><br />
+              <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required
+                pattern="\(\d{2}\)\s\d{4,5}-\d{4}" title="Digite o telefone no formato: (00) 00000-0000"
+                maxlength="15" />
+              <small>Formato: (00) 00000-0000</small>
+            </p>
+
+            <p>
+              <label for="data-nascimento">Data de Nascimento: <abbr title="obrigatório">*</abbr></label><br />
+              <input type="date" id="data-nascimento" name="data-nascimento" required min="1924-01-01"
+                max="2009-12-31" />
+              <small>Você deve ter no mínimo 16 anos</small>
+            </p>
+
+            <p>
+              <span>Gênero: <abbr title="obrigatório">*</abbr></span><br />
+              <input type="radio" id="feminino" name="genero" value="feminino" required />
+              <label for="feminino">Feminino</label>
+              <input type="radio" id="masculino" name="genero" value="masculino" />
+              <label for="masculino">Masculino</label>
+              <input type="radio" id="outro" name="genero" value="outro" />
+              <label for="outro">Outro</label>
+              <input type="radio" id="nao-informar" name="genero" value="nao-informar" />
+              <label for="nao-informar">Prefiro não informar</label>
+            </p>
+          </fieldset>
+
+          <!-- Endereço -->
+          <fieldset>
+            <legend>Endereço</legend>
+
+            <p>
+              <label for="cep">CEP: <abbr title="obrigatório">*</abbr></label><br />
+              <input type="text" id="cep" name="cep" placeholder="00000-000" required pattern="\d{5}-\d{3}"
+                title="Digite o CEP no formato: 00000-000" maxlength="9" />
+              <small>Formato: 00000-000</small>
+            </p>
+
+            <p>
+              <label for="endereco">Endereço (Rua, Avenida):
+                <abbr title="obrigatório">*</abbr></label><br />
+              <input type="text" id="endereco" name="endereco" placeholder="Rua, Avenida, etc." required size="50" />
+            </p>
+
+            <p>
+              <label for="numero">Número:</label><br />
+              <input type="text" id="numero" name="numero" placeholder="Número ou S/N" size="10" />
+            </p>
+
+            <p>
+              <label for="complemento">Complemento:</label><br />
+              <input type="text" id="complemento" name="complemento" placeholder="Apartamento, bloco, etc." size="30" />
+            </p>
+
+            <p>
+              <label for="bairro">Bairro: <abbr title="obrigatório">*</abbr></label><br />
+              <input type="text" id="bairro" name="bairro" placeholder="Nome do bairro" required size="30" />
+            </p>
+
+            <p>
+              <label for="cidade">Cidade: <abbr title="obrigatório">*</abbr></label><br />
+              <input type="text" id="cidade" name="cidade" placeholder="Nome da cidade" required size="30" />
+            </p>
+
+            <p>
+              <label for="estado">Estado: <abbr title="obrigatório">*</abbr></label><br />
+              <select id="estado" name="estado" required>
+                <option value="">Selecione um estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+              </select>
+            </p>
+          </fieldset>
+
+          <!-- Formação e Experiência -->
+          <fieldset>
+            <legend>Formação e Experiência</legend>
+
+            <p>
+              <label for="escolaridade">Escolaridade: <abbr title="obrigatório">*</abbr></label><br />
+              <select id="escolaridade" name="escolaridade" required>
+                <option value="">Selecione sua escolaridade</option>
+                <option value="fundamental-incompleto">
+                  Ensino Fundamental Incompleto
+                </option>
+                <option value="fundamental-completo">
+                  Ensino Fundamental Completo
+                </option>
+                <option value="medio-incompleto">
+                  Ensino Médio Incompleto
+                </option>
+                <option value="medio-completo">Ensino Médio Completo</option>
+                <option value="superior-incompleto">
+                  Ensino Superior Incompleto
+                </option>
+                <option value="superior-completo">
+                  Ensino Superior Completo
+                </option>
+                <option value="pos-graduacao">Pós-Graduação</option>
+                <option value="mestrado">Mestrado</option>
+                <option value="doutorado">Doutorado</option>
+              </select>
+            </p>
+
+            <p>
+              <label for="profissao">Profissão/Área de Atuação:</label><br />
+              <input type="text" id="profissao" name="profissao" placeholder="Ex: Professor, Engenheiro, Estudante"
+                size="40" />
+            </p>
+
+            <p>
+              <label for="habilidades">Habilidades e Conhecimentos:</label><br />
+              <textarea id="habilidades" name="habilidades" rows="4" cols="50"
+                placeholder="Descreva suas habilidades, conhecimentos e experiências..."></textarea>
+            </p>
+          </fieldset>
+
+          <!-- Interesse em Voluntariado -->
+          <fieldset>
+            <legend>Interesse em Voluntariado</legend>
+
+            <p>
+              <span>Áreas de Interesse: <abbr title="obrigatório">*</abbr></span><br />
+              <small>Selecione uma ou mais áreas</small><br /><br />
+              <input type="checkbox" id="educacao" name="areas-interesse" value="educacao" required />
+              <label for="educacao">Educação (reforço, biblioteca)</label><br />
+              <input type="checkbox" id="informatica" name="areas-interesse" value="informatica" />
+              <label for="informatica">Informática e Tecnologia</label><br />
+              <input type="checkbox" id="profissionalizante" name="areas-interesse" value="profissionalizante" />
+              <label for="profissionalizante">Cursos Profissionalizantes</label><br />
+              <input type="checkbox" id="esporte" name="areas-interesse" value="esporte" />
+              <label for="esporte">Esporte e Recreação</label><br />
+              <input type="checkbox" id="arte" name="areas-interesse" value="arte" />
+              <label for="arte">Arte e Cultura</label><br />
+              <input type="checkbox" id="administrativo" name="areas-interesse" value="administrativo" />
+              <label for="administrativo">Administrativo</label><br />
+              <input type="checkbox" id="eventos" name="areas-interesse" value="eventos" />
+              <label for="eventos">Organização de Eventos</label><br />
+              <input type="checkbox" id="outros" name="areas-interesse" value="outros" />
+              <label for="outros">Outros</label>
+            </p>
+
+            <p>
+              <label for="disponibilidade">Disponibilidade Semanal:
+                <abbr title="obrigatório">*</abbr></label><br />
+              <select id="disponibilidade" name="disponibilidade" required>
+                <option value="">Selecione</option>
+                <option value="4-horas">4 horas por semana</option>
+                <option value="8-horas">8 horas por semana</option>
+                <option value="12-horas">12 horas por semana</option>
+                <option value="16-horas">16 horas ou mais por semana</option>
+                <option value="eventual">Eventual (eventos/campanhas)</option>
+              </select>
+            </p>
+
+            <p>
+              <label for="periodo">Período Preferencial:</label><br />
+              <select id="periodo" name="periodo">
+                <option value="">Selecione</option>
+                <option value="manha">Manhã (8h–12h)</option>
+                <option value="tarde">Tarde (13h–17h)</option>
+                <option value="noite">Noite (18h–21h)</option>
+                <option value="fim-de-semana">Finais de semana</option>
+                <option value="flexivel">Flexível</option>
+              </select>
+            </p>
+
+            <p>
+              <label for="motivacao">Por que você quer ser voluntário?</label><br />
+              <textarea id="motivacao" name="motivacao" rows="5" cols="50"
+                placeholder="Conte-nos sua motivação..."></textarea>
+            </p>
+
+            <p>
+              <label for="experiencia-voluntariado">Já teve experiência anterior com voluntariado?</label><br />
+              <select id="experiencia-voluntariado" name="experiencia-voluntariado">
+                <option value="">Selecione</option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+              </select>
+            </p>
+
+            <p>
+              <label for="detalhes-experiencia">Se sim, conte-nos:</label><br />
+              <textarea id="detalhes-experiencia" name="detalhes-experiencia" rows="4" cols="50"
+                placeholder="Descreva suas experiências anteriores..."></textarea>
+            </p>
+          </fieldset>
+
+          <!-- Como nos conheceu -->
+          <fieldset>
+            <legend>Como Conheceu a Esperança Solidária?</legend>
+            <p>
+              <label for="como-conheceu">Selecione uma opção:
+                <abbr title="obrigatório">*</abbr></label><br />
+              <select id="como-conheceu" name="como-conheceu" required>
+                <option value="">Selecione</option>
+                <option value="redes-sociais">Redes Sociais</option>
+                <option value="indicacao">Indicação</option>
+                <option value="internet">Pesquisa na Internet</option>
+                <option value="evento">Evento ou palestra</option>
+                <option value="midia">Mídia (TV, rádio, jornal)</option>
+                <option value="escola-universidade">
+                  Escola ou Universidade
+                </option>
+                <option value="outro">Outro</option>
+              </select>
+            </p>
+          </fieldset>
+
+          <!-- Termos e Condições -->
+          <fieldset>
+            <legend>Termos e Condições</legend>
+            <p>
+              <input type="checkbox" id="termo-veracidade" name="termo-veracidade" required />
+              <label for="termo-veracidade">Declaro que as informações fornecidas são verdadeiras
+                <abbr title="obrigatório">*</abbr></label>
+            </p>
+            <p>
+              <input type="checkbox" id="termo-compromisso" name="termo-compromisso" required />
+              <label for="termo-compromisso">Comprometo-me a participar da capacitação inicial
+                <abbr title="obrigatório">*</abbr></label>
+            </p>
+            <p>
+              <input type="checkbox" id="termo-disponibilidade" name="termo-disponibilidade" required />
+              <label for="termo-disponibilidade">Comprometo-me a cumprir a disponibilidade informada por 6
+                meses <abbr title="obrigatório">*</abbr></label>
+            </p>
+            <p>
+              <input type="checkbox" id="termo-lgpd" name="termo-lgpd" required />
+              <label for="termo-lgpd">Autorizo o uso dos meus dados conforme a LGPD
+                <abbr title="obrigatório">*</abbr></label>
+            </p>
+            <p>
+              <input type="checkbox" id="termo-comunicacao" name="termo-comunicacao" />
+              <label for="termo-comunicacao">Aceito receber comunicações da ONG</label>
+            </p>
+          </fieldset>
+
+          <!-- Botões de Ação -->
+          <p>
+            <button class="btn btn-primario" type="submit">
+              Enviar Cadastro
+            </button>
+            <button class="btn" type="reset">Limpar Formulário</button>
+          </p>
+
+          <p>
+            <small>Após enviar, você receberá um e-mail com os próximos passos.
+              Retorno em até 5 dias úteis.</small>
+          </p>
+        </form>
+      </article>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Esperança Solidária - Todos os direitos reservados</p>
+      <p>
+        CNPJ: 12.345.678/0001-90 | Utilidade Pública Municipal: Lei nº
+        12.345/2010
+      </p>
+      <nav>
         <ul>
           <li><a href="index.html">Início</a></li>
           <li><a href="projetos.html">Projetos</a></li>
           <li><a href="cadastro.html">Cadastre-se</a></li>
         </ul>
       </nav>
-    </header>
+    </div>
+  </footer>
 
-    <!-- Conteúdo Principal -->
-    <main class="container">
-      <section class="hero">
-        <h2>Cadastro de Voluntário</h2>
-        <img
-          src="imagens/cadastro-banner.jpg"
-          alt="Voluntários trabalhando juntos em projeto social"
-          width="800"
-          height="400"
-        />
-        <p>
-          Preencha o formulário abaixo com atenção para iniciarmos sua jornada
-          de transformação social conosco.
-        </p>
+  <!-- JS -->
+  <script src="js/main.js" defer></script>
+</body>
 
-        <article>
-          <h3>Formulário de Inscrição</h3>
-          <p>
-            <strong>Importante:</strong> Campos marcados com
-            <abbr title="obrigatório">*</abbr> são obrigatórios.
-          </p>
-
-          <form
-            action="https://formsubmit.co/contato@esperancasolidaria.org.br"
-            method="POST"
-            novalidate
-          >
-            <!-- Dados Pessoais -->
-            <fieldset>
-              <legend>Dados Pessoais</legend>
-
-              <p>
-                <label for="nome"
-                  >Nome Completo: <abbr title="obrigatório">*</abbr></label
-                ><br />
-                <input
-                  type="text"
-                  id="nome"
-                  name="nome"
-                  placeholder="Digite seu nome completo"
-                  required
-                  minlength="3"
-                  maxlength="100"
-                  pattern="[A-Za-zÀ-ÿ\s]+"
-                  title="Digite apenas letras e espaços"
-                  size="50"
-                />
-              </p>
-
-              <p>
-                <label for="email"
-                  >E-mail: <abbr title="obrigatório">*</abbr></label
-                ><br />
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="seuemail@exemplo.com"
-                  required
-                  size="50"
-                />
-              </p>
-
-              <p>
-                <label for="cpf">CPF: <abbr title="obrigatório">*</abbr></label
-                ><br />
-                <input
-                  type="text"
-                  id="cpf"
-                  name="cpf"
-                  placeholder="000.000.000-00"
-                  required
-                  pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
-                  title="Digite o CPF no formato: 000.000.000-00"
-                  maxlength="14"
-                />
-                <small>Formato: 000.000.000-00</small>
-              </p>
-
-              <p>
-                <label for="telefone"
-                  >Telefone: <abbr title="obrigatório">*</abbr></label
-                ><br />
-                <input
-                  type="tel"
-                  id="telefone"
-                  name="telefone"
-                  placeholder="(00) 00000-0000"
-                  required
-                  pattern="\(\d{2}\)\s\d{4,5}-\d{4}"
-                  title="Digite o telefone no formato: (00) 00000-0000"
-                  maxlength="15"
-                />
-                <small>Formato: (00) 00000-0000</small>
-              </p>
-
-              <p>
-                <label for="data-nascimento"
-                  >Data de Nascimento: <abbr title="obrigatório">*</abbr></label
-                ><br />
-                <input
-                  type="date"
-                  id="data-nascimento"
-                  name="data-nascimento"
-                  required
-                  min="1924-01-01"
-                  max="2009-12-31"
-                />
-                <small>Você deve ter no mínimo 16 anos</small>
-              </p>
-
-              <p>
-                <span>Gênero: <abbr title="obrigatório">*</abbr></span
-                ><br />
-                <input
-                  type="radio"
-                  id="feminino"
-                  name="genero"
-                  value="feminino"
-                  required
-                />
-                <label for="feminino">Feminino</label>
-                <input
-                  type="radio"
-                  id="masculino"
-                  name="genero"
-                  value="masculino"
-                />
-                <label for="masculino">Masculino</label>
-                <input type="radio" id="outro" name="genero" value="outro" />
-                <label for="outro">Outro</label>
-                <input
-                  type="radio"
-                  id="nao-informar"
-                  name="genero"
-                  value="nao-informar"
-                />
-                <label for="nao-informar">Prefiro não informar</label>
-              </p>
-            </fieldset>
-
-            <!-- Endereço -->
-            <fieldset>
-              <legend>Endereço</legend>
-
-              <p>
-                <label for="cep">CEP: <abbr title="obrigatório">*</abbr></label
-                ><br />
-                <input
-                  type="text"
-                  id="cep"
-                  name="cep"
-                  placeholder="00000-000"
-                  required
-                  pattern="\d{5}-\d{3}"
-                  title="Digite o CEP no formato: 00000-000"
-                  maxlength="9"
-                />
-                <small>Formato: 00000-000</small>
-              </p>
-
-              <p>
-                <label for="endereco"
-                  >Endereço (Rua, Avenida):
-                  <abbr title="obrigatório">*</abbr></label
-                ><br />
-                <input
-                  type="text"
-                  id="endereco"
-                  name="endereco"
-                  placeholder="Rua, Avenida, etc."
-                  required
-                  size="50"
-                />
-              </p>
-
-              <p>
-                <label for="numero">Número:</label><br />
-                <input
-                  type="text"
-                  id="numero"
-                  name="numero"
-                  placeholder="Número ou S/N"
-                  size="10"
-                />
-              </p>
-
-              <p>
-                <label for="complemento">Complemento:</label><br />
-                <input
-                  type="text"
-                  id="complemento"
-                  name="complemento"
-                  placeholder="Apartamento, bloco, etc."
-                  size="30"
-                />
-              </p>
-
-              <p>
-                <label for="bairro"
-                  >Bairro: <abbr title="obrigatório">*</abbr></label
-                ><br />
-                <input
-                  type="text"
-                  id="bairro"
-                  name="bairro"
-                  placeholder="Nome do bairro"
-                  required
-                  size="30"
-                />
-              </p>
-
-              <p>
-                <label for="cidade"
-                  >Cidade: <abbr title="obrigatório">*</abbr></label
-                ><br />
-                <input
-                  type="text"
-                  id="cidade"
-                  name="cidade"
-                  placeholder="Nome da cidade"
-                  required
-                  size="30"
-                />
-              </p>
-
-              <p>
-                <label for="estado"
-                  >Estado: <abbr title="obrigatório">*</abbr></label
-                ><br />
-                <select id="estado" name="estado" required>
-                  <option value="">Selecione um estado</option>
-                  <option value="AC">Acre</option>
-                  <option value="AL">Alagoas</option>
-                  <option value="AP">Amapá</option>
-                  <option value="AM">Amazonas</option>
-                  <option value="BA">Bahia</option>
-                  <option value="CE">Ceará</option>
-                  <option value="DF">Distrito Federal</option>
-                  <option value="ES">Espírito Santo</option>
-                  <option value="GO">Goiás</option>
-                  <option value="MA">Maranhão</option>
-                  <option value="MT">Mato Grosso</option>
-                  <option value="MS">Mato Grosso do Sul</option>
-                  <option value="MG">Minas Gerais</option>
-                  <option value="PA">Pará</option>
-                  <option value="PB">Paraíba</option>
-                  <option value="PR">Paraná</option>
-                  <option value="PE">Pernambuco</option>
-                  <option value="PI">Piauí</option>
-                  <option value="RJ">Rio de Janeiro</option>
-                  <option value="RN">Rio Grande do Norte</option>
-                  <option value="RS">Rio Grande do Sul</option>
-                  <option value="RO">Rondônia</option>
-                  <option value="RR">Roraima</option>
-                  <option value="SC">Santa Catarina</option>
-                  <option value="SP">São Paulo</option>
-                  <option value="SE">Sergipe</option>
-                  <option value="TO">Tocantins</option>
-                </select>
-              </p>
-            </fieldset>
-
-            <!-- Formação e Experiência -->
-            <fieldset>
-              <legend>Formação e Experiência</legend>
-
-              <p>
-                <label for="escolaridade"
-                  >Escolaridade: <abbr title="obrigatório">*</abbr></label
-                ><br />
-                <select id="escolaridade" name="escolaridade" required>
-                  <option value="">Selecione sua escolaridade</option>
-                  <option value="fundamental-incompleto">
-                    Ensino Fundamental Incompleto
-                  </option>
-                  <option value="fundamental-completo">
-                    Ensino Fundamental Completo
-                  </option>
-                  <option value="medio-incompleto">
-                    Ensino Médio Incompleto
-                  </option>
-                  <option value="medio-completo">Ensino Médio Completo</option>
-                  <option value="superior-incompleto">
-                    Ensino Superior Incompleto
-                  </option>
-                  <option value="superior-completo">
-                    Ensino Superior Completo
-                  </option>
-                  <option value="pos-graduacao">Pós-Graduação</option>
-                  <option value="mestrado">Mestrado</option>
-                  <option value="doutorado">Doutorado</option>
-                </select>
-              </p>
-
-              <p>
-                <label for="profissao">Profissão/Área de Atuação:</label><br />
-                <input
-                  type="text"
-                  id="profissao"
-                  name="profissao"
-                  placeholder="Ex: Professor, Engenheiro, Estudante"
-                  size="40"
-                />
-              </p>
-
-              <p>
-                <label for="habilidades">Habilidades e Conhecimentos:</label
-                ><br />
-                <textarea
-                  id="habilidades"
-                  name="habilidades"
-                  rows="4"
-                  cols="50"
-                  placeholder="Descreva suas habilidades, conhecimentos e experiências..."
-                ></textarea>
-              </p>
-            </fieldset>
-
-            <!-- Interesse em Voluntariado -->
-            <fieldset>
-              <legend>Interesse em Voluntariado</legend>
-
-              <p>
-                <span
-                  >Áreas de Interesse: <abbr title="obrigatório">*</abbr></span
-                ><br />
-                <small>Selecione uma ou mais áreas</small><br /><br />
-                <input
-                  type="checkbox"
-                  id="educacao"
-                  name="areas-interesse"
-                  value="educacao"
-                  required
-                />
-                <label for="educacao">Educação (reforço, biblioteca)</label
-                ><br />
-                <input
-                  type="checkbox"
-                  id="informatica"
-                  name="areas-interesse"
-                  value="informatica"
-                />
-                <label for="informatica">Informática e Tecnologia</label><br />
-                <input
-                  type="checkbox"
-                  id="profissionalizante"
-                  name="areas-interesse"
-                  value="profissionalizante"
-                />
-                <label for="profissionalizante"
-                  >Cursos Profissionalizantes</label
-                ><br />
-                <input
-                  type="checkbox"
-                  id="esporte"
-                  name="areas-interesse"
-                  value="esporte"
-                />
-                <label for="esporte">Esporte e Recreação</label><br />
-                <input
-                  type="checkbox"
-                  id="arte"
-                  name="areas-interesse"
-                  value="arte"
-                />
-                <label for="arte">Arte e Cultura</label><br />
-                <input
-                  type="checkbox"
-                  id="administrativo"
-                  name="areas-interesse"
-                  value="administrativo"
-                />
-                <label for="administrativo">Administrativo</label><br />
-                <input
-                  type="checkbox"
-                  id="eventos"
-                  name="areas-interesse"
-                  value="eventos"
-                />
-                <label for="eventos">Organização de Eventos</label><br />
-                <input
-                  type="checkbox"
-                  id="outros"
-                  name="areas-interesse"
-                  value="outros"
-                />
-                <label for="outros">Outros</label>
-              </p>
-
-              <p>
-                <label for="disponibilidade"
-                  >Disponibilidade Semanal:
-                  <abbr title="obrigatório">*</abbr></label
-                ><br />
-                <select id="disponibilidade" name="disponibilidade" required>
-                  <option value="">Selecione</option>
-                  <option value="4-horas">4 horas por semana</option>
-                  <option value="8-horas">8 horas por semana</option>
-                  <option value="12-horas">12 horas por semana</option>
-                  <option value="16-horas">16 horas ou mais por semana</option>
-                  <option value="eventual">Eventual (eventos/campanhas)</option>
-                </select>
-              </p>
-
-              <p>
-                <label for="periodo">Período Preferencial:</label><br />
-                <select id="periodo" name="periodo">
-                  <option value="">Selecione</option>
-                  <option value="manha">Manhã (8h–12h)</option>
-                  <option value="tarde">Tarde (13h–17h)</option>
-                  <option value="noite">Noite (18h–21h)</option>
-                  <option value="fim-de-semana">Finais de semana</option>
-                  <option value="flexivel">Flexível</option>
-                </select>
-              </p>
-
-              <p>
-                <label for="motivacao">Por que você quer ser voluntário?</label
-                ><br />
-                <textarea
-                  id="motivacao"
-                  name="motivacao"
-                  rows="5"
-                  cols="50"
-                  placeholder="Conte-nos sua motivação..."
-                ></textarea>
-              </p>
-
-              <p>
-                <label for="experiencia-voluntariado"
-                  >Já teve experiência anterior com voluntariado?</label
-                ><br />
-                <select
-                  id="experiencia-voluntariado"
-                  name="experiencia-voluntariado"
-                >
-                  <option value="">Selecione</option>
-                  <option value="sim">Sim</option>
-                  <option value="nao">Não</option>
-                </select>
-              </p>
-
-              <p>
-                <label for="detalhes-experiencia">Se sim, conte-nos:</label
-                ><br />
-                <textarea
-                  id="detalhes-experiencia"
-                  name="detalhes-experiencia"
-                  rows="4"
-                  cols="50"
-                  placeholder="Descreva suas experiências anteriores..."
-                ></textarea>
-              </p>
-            </fieldset>
-
-            <!-- Como nos conheceu -->
-            <fieldset>
-              <legend>Como Conheceu a Esperança Solidária?</legend>
-              <p>
-                <label for="como-conheceu"
-                  >Selecione uma opção:
-                  <abbr title="obrigatório">*</abbr></label
-                ><br />
-                <select id="como-conheceu" name="como-conheceu" required>
-                  <option value="">Selecione</option>
-                  <option value="redes-sociais">Redes Sociais</option>
-                  <option value="indicacao">Indicação</option>
-                  <option value="internet">Pesquisa na Internet</option>
-                  <option value="evento">Evento ou palestra</option>
-                  <option value="midia">Mídia (TV, rádio, jornal)</option>
-                  <option value="escola-universidade">
-                    Escola ou Universidade
-                  </option>
-                  <option value="outro">Outro</option>
-                </select>
-              </p>
-            </fieldset>
-
-            <!-- Termos e Condições -->
-            <fieldset>
-              <legend>Termos e Condições</legend>
-              <p>
-                <input
-                  type="checkbox"
-                  id="termo-veracidade"
-                  name="termo-veracidade"
-                  required
-                />
-                <label for="termo-veracidade"
-                  >Declaro que as informações fornecidas são verdadeiras
-                  <abbr title="obrigatório">*</abbr></label
-                >
-              </p>
-              <p>
-                <input
-                  type="checkbox"
-                  id="termo-compromisso"
-                  name="termo-compromisso"
-                  required
-                />
-                <label for="termo-compromisso"
-                  >Comprometo-me a participar da capacitação inicial
-                  <abbr title="obrigatório">*</abbr></label
-                >
-              </p>
-              <p>
-                <input
-                  type="checkbox"
-                  id="termo-disponibilidade"
-                  name="termo-disponibilidade"
-                  required
-                />
-                <label for="termo-disponibilidade"
-                  >Comprometo-me a cumprir a disponibilidade informada por 6
-                  meses <abbr title="obrigatório">*</abbr></label
-                >
-              </p>
-              <p>
-                <input
-                  type="checkbox"
-                  id="termo-lgpd"
-                  name="termo-lgpd"
-                  required
-                />
-                <label for="termo-lgpd"
-                  >Autorizo o uso dos meus dados conforme a LGPD
-                  <abbr title="obrigatório">*</abbr></label
-                >
-              </p>
-              <p>
-                <input
-                  type="checkbox"
-                  id="termo-comunicacao"
-                  name="termo-comunicacao"
-                />
-                <label for="termo-comunicacao"
-                  >Aceito receber comunicações da ONG</label
-                >
-              </p>
-            </fieldset>
-
-            <!-- Botões de Ação -->
-            <p>
-              <button class="btn btn-primario" type="submit">
-                Enviar Cadastro
-              </button>
-              <button class="btn" type="reset">Limpar Formulário</button>
-            </p>
-
-            <p>
-              <small
-                >Após enviar, você receberá um e-mail com os próximos passos.
-                Retorno em até 5 dias úteis.</small
-              >
-            </p>
-          </form>
-        </article>
-      </section>
-    </main>
-
-    <!-- Rodapé -->
-    <footer>
-      <div class="container">
-        <p>&copy; 2025 Esperança Solidária - Todos os direitos reservados</p>
-        <p>
-          CNPJ: 12.345.678/0001-90 | Utilidade Pública Municipal: Lei nº
-          12.345/2010
-        </p>
-        <nav>
-          <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="projetos.html">Projetos</a></li>
-            <li><a href="cadastro.html">Cadastre-se</a></li>
-          </ul>
-        </nav>
-      </div>
-    </footer>
-
-    <!-- JS -->
-    <script src="js/main.js" defer></script>
-  </body>
 </html>
