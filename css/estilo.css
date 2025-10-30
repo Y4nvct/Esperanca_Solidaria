@@ -109,20 +109,7 @@ main,
   color-scheme: dark;
 }
 
-/* Se o usuário preferir dark no sistema, aplica por padrão */
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme]) {
-    --bg: #0b1220;
-    --surface: #0f1724;
-    --text: #e6eef8;
-    --muted: #94a3b8;
-    --primary: #60a5fa;
-    --accent: #4ade80;
-    --link: var(--primary);
-    --card-shadow: 0 6px 18px rgba(2, 6, 23, 0.6);
-    color-scheme: dark;
-  }
-}
+/* Removido: não seguir tema do sistema por padrão */
 
 /* Regras globais usando as variáveis */
 html,
@@ -403,7 +390,7 @@ textarea {
   margin-top: 6px;
   border: 1px solid var(--cinza-200);
   border-radius: 8px;
-  background: #fff;
+  background: var(--surface);
 }
 
 input:focus,

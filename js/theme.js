@@ -13,9 +13,7 @@
     } catch { }
   }
 
-  function prefersDark() {
-    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-  }
+  function prefersDark() { return false; }
 
   function applyTheme(theme) {
     if (theme === 'dark') root.setAttribute('data-theme', 'dark');
@@ -41,7 +39,7 @@
   function init() {
     const btn = document.getElementById('theme-toggle');
     const saved = getSavedTheme();
-    const startDark = saved ? saved === 'dark' : prefersDark();
+    const startDark = saved ? saved === 'dark' : false; // padrão: claro
     applyTheme(startDark ? 'dark' : 'light');
     if (btn) {
       btn.addEventListener('click', () => {
@@ -50,10 +48,7 @@
         applyTheme(nextDark ? 'dark' : 'light');
       });
     }
-    if (!saved && window.matchMedia) {
-      const mq = window.matchMedia('(prefers-color-scheme: dark)');
-      mq.addEventListener?.('change', () => applyTheme(prefersDark() ? 'dark' : 'light'));
-    }
+    // não seguir mais o tema do sistema
   }
 
   if (document.readyState === 'loading') {
