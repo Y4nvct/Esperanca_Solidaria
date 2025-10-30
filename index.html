@@ -1,338 +1,290 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="ONG Esperança Solidária - Transformando vidas através da educação e inclusão social"
-    />
-    <meta
-      name="keywords"
-      content="ONG, educação, inclusão social, voluntariado, doações"
-    />
-    <meta name="author" content="Esperança Solidária" />
-    <title>Esperança Solidária - Transformando Vidas pela Educação</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/estilo.css" />
-  </head>
-  <body>
-    <!-- Cabeçalho Principal -->
-    <header>
-      <nav class="container">
-        <h1>Esperança Solidária</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="ONG Esperança Solidária - Transformando vidas através da educação e inclusão social" />
+  <meta name="theme-color" content="#ffffff">
+  <meta name="keywords" content="ONG, educação, inclusão social, voluntariado, doações" />
+  <meta name="author" content="Esperança Solidária" />
+  <title>Esperança Solidária - Transformando Vidas pela Educação</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/estilo.css" />
+</head>
+
+<body>
+  <!-- Cabeçalho Principal -->
+  <header>
+    <nav class="container">
+      <h1>Esperança Solidária</h1>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="cadastro.html">Cadastre-se</a></li>
+      </ul>
+      <button id="theme-toggle" aria-pressed="false" aria-label="Alternar tema" title="Trocar tema">
+        <!-- Conteúdo será preenchido pelo JS (ícone e label oculto) -->
+      </button>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="container">
+    <!-- Seção Hero -->
+    <section class="hero">
+      <h2>Transformando Vidas Através da Educação</h2>
+      <p>
+        Há mais de 15 anos levando esperança e oportunidades para comunidades
+        em situação de vulnerabilidade social.
+      </p>
+      <div class="cta">
+        <a class="btn btn-primario" href="cadastro.html">Seja um Voluntário</a>
+        <a class="btn btn-secundario" href="projetos.html">Faça uma Doação</a>
+      </div>
+      <img src="imagens/hero-educacao.jpg" alt="Crianças sorrindo em sala de aula durante atividade educacional"
+        loading="lazy" width="800" height="450" />
+    </section>
+
+    <!-- Sobre a Organização -->
+    <section>
+      <h2>Quem Somos</h2>
+      <article>
+        <h3>Nossa História</h3>
+        <img src="imagens/historia-ong.jpg" alt="Fundadores da ONG Esperança Solidária em evento comunitário"
+          loading="lazy" width="600" height="400" />
+        <p>
+          Fundada em 2009, a <strong>Esperança Solidária</strong> nasceu do
+          sonho de um grupo de educadores que acreditavam no poder
+          transformador da educação. Começamos atendendo 30 crianças em uma
+          pequena sala alugada e hoje impactamos mais de 5.000 vidas
+          anualmente.
+        </p>
+        <p>
+          Nossa jornada é marcada por conquistas significativas: construção de
+          3 centros educacionais, formação de mais de 200 voluntários
+          capacitados e parcerias com 50 empresas que acreditam em nossa
+          missão.
+        </p>
+      </article>
+
+      <article>
+        <h3>Missão</h3>
+        <p>
+          Promover a educação de qualidade e a inclusão social de crianças,
+          adolescentes e adultos em situação de vulnerabilidade, desenvolvendo
+          suas potencialidades e ampliando oportunidades para uma vida digna e
+          cidadã.
+        </p>
+      </article>
+
+      <article>
+        <h3>Visão</h3>
+        <p>
+          Ser referência nacional em projetos educacionais e de inclusão
+          social, reconhecida pela excelência, transparência e impacto
+          positivo nas comunidades atendidas até 2030.
+        </p>
+      </article>
+
+      <article>
+        <h3>Valores</h3>
+        <ul>
+          <li>
+            <strong>Educação Transformadora:</strong> Acreditamos que a
+            educação é o caminho para mudanças reais e duradouras
+          </li>
+          <li>
+            <strong>Transparência:</strong> Prestamos contas de cada recurso
+            recebido e aplicado
+          </li>
+          <li>
+            <strong>Respeito à Diversidade:</strong> Valorizamos e respeitamos
+            todas as pessoas, independente de origem, raça ou credo
+          </li>
+          <li>
+            <strong>Compromisso Social:</strong> Trabalhamos incansavelmente
+            pelo bem-estar das comunidades
+          </li>
+          <li>
+            <strong>Colaboração:</strong> Construímos pontes entre pessoas,
+            empresas e instituições
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Impacto e Números -->
+    <section>
+      <h2>Nosso Impacto em Números</h2>
+      <img src="imagens/impacto-social.jpg"
+        alt="Gráfico mostrando crescimento do impacto social da ONG ao longo dos anos" loading="lazy" width="700"
+        height="400" />
+      <article>
+        <h3>Conquistas de 2024</h3>
+        <dl>
+          <dt>Pessoas Atendidas</dt>
+          <dd>5.247 beneficiários diretos em nossos programas</dd>
+          <dt>Voluntários Ativos</dt>
+          <dd>312 voluntários dedicados mensalmente</dd>
+          <dt>Projetos em Andamento</dt>
+          <dd>18 projetos ativos em 8 comunidades</dd>
+          <dt>Taxa de Aprovação Escolar</dt>
+          <dd>94% dos alunos aprovados com melhoria no desempenho</dd>
+          <dt>Inserção no Mercado</dt>
+          <dd>78% dos jovens formados conseguiram emprego em até 6 meses</dd>
+        </dl>
+      </article>
+    </section>
+
+    <!-- Equipe -->
+    <section>
+      <h2>Nossa Equipe</h2>
+      <article>
+        <h3>Liderança Comprometida</h3>
+        <p>
+          Nossa equipe é formada por profissionais apaixonados por
+          transformação social, com experiência em educação, gestão de
+          projetos sociais e desenvolvimento comunitário.
+        </p>
+        <figure>
+          <img src="imagens/equipe-diretoria.jpg" alt="Diretoria da ONG Esperança Solidária reunida" loading="lazy"
+            width="600" height="400" />
+          <figcaption>
+            Diretoria Executiva - Reunião de Planejamento Estratégico 2024
+          </figcaption>
+        </figure>
+
+        <h4>Diretoria Executiva</h4>
+        <ul>
+          <li>
+            <strong>Maria Silva</strong> - Diretora Presidente (Pedagoga, 20
+            anos de experiência)
+          </li>
+          <li>
+            <strong>João Santos</strong> - Diretor Financeiro (Contador,
+            especialista em terceiro setor)
+          </li>
+          <li>
+            <strong>Ana Costa</strong> - Coordenadora de Projetos (Assistente
+            Social)
+          </li>
+          <li>
+            <strong>Carlos Oliveira</strong> - Coordenador de Voluntários
+            (Psicólogo)
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Transparência -->
+    <section>
+      <h2>Transparência e Prestação de Contas</h2>
+      <article>
+        <h3>Relatórios Anuais</h3>
+        <p>
+          Acreditamos que a transparência é fundamental para construir
+          confiança. Todos os nossos relatórios financeiros e de atividades
+          estão disponíveis publicamente.
+        </p>
+        <h4>Documentos Disponíveis</h4>
+        <ul>
+          <li>
+            <a href="#" download>Relatório de Atividades 2024 (PDF - 2.5MB)</a>
+          </li>
+          <li>
+            <a href="#" download>Balanço Financeiro 2024 (PDF - 1.8MB)</a>
+          </li>
+          <li>
+            <a href="#" download>Estatuto Social Atualizado (PDF - 850KB)</a>
+          </li>
+          <li>
+            <a href="#" download>Certificado de Utilidade Pública (PDF - 450KB)</a>
+          </li>
+        </ul>
+        <h4>Distribuição de Recursos 2024</h4>
+        <img src="imagens/grafico-recursos.jpg" alt="Gráfico de pizza mostrando distribuição de recursos" loading="lazy"
+          width="600" height="400" />
+        <ul>
+          <li>65% - Projetos Educacionais e Sociais</li>
+          <li>20% - Infraestrutura e Manutenção</li>
+          <li>10% - Administrativo e Gestão</li>
+          <li>5% - Captação de Recursos e Comunicação</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Contato -->
+    <section>
+      <h2>Entre em Contato</h2>
+      <article>
+        <h3>Fale Conosco</h3>
+        <address>
+          <p><strong>Sede Administrativa</strong></p>
+          <p>
+            Rua da Esperança, 1234 - Centro<br />São Paulo - SP<br />CEP:
+            01234-567
+          </p>
+          <p>
+            <strong>Telefone:</strong>
+            <a href="tel:+551133334444">(11) 3333-4444</a>
+          </p>
+          <p>
+            <strong>WhatsApp:</strong>
+            <a href="https://wa.me/5511999998888">(11) 99999-8888</a>
+          </p>
+          <p>
+            <strong>E-mail:</strong>
+            <a href="mailto:contato@esperancasolidaria.org.br">contato@esperancasolidaria.org.br</a>
+          </p>
+          <p>
+            <strong>Horário de Atendimento:</strong><br />Seg a Sex: 8h–18h |
+            Sáb: 9h–13h
+          </p>
+        </address>
+        <h4>Redes Sociais</h4>
+        <ul>
+          <li>
+            <a href="https://facebook.com/esperancasolidaria" target="_blank" rel="noopener noreferrer">Facebook</a>
+          </li>
+          <li>
+            <a href="https://instagram.com/esperancasolidaria" target="_blank" rel="noopener noreferrer">Instagram</a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/company/esperancasolidaria" target="_blank"
+              rel="noopener noreferrer">LinkedIn</a>
+          </li>
+          <li>
+            <a href="https://youtube.com/@esperancasolidaria" target="_blank" rel="noopener noreferrer">YouTube</a>
+          </li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Esperança Solidária - Todos os direitos reservados</p>
+      <p>
+        CNPJ: 12.345.678/0001-90 | Utilidade Pública Municipal: Lei nº
+        12.345/2010
+      </p>
+      <nav>
         <ul>
           <li><a href="index.html">Início</a></li>
           <li><a href="projetos.html">Projetos</a></li>
           <li><a href="cadastro.html">Cadastre-se</a></li>
         </ul>
       </nav>
-    </header>
+    </div>
+  </footer>
 
-    <!-- Conteúdo Principal -->
-    <main class="container">
-      <!-- Seção Hero -->
-      <section class="hero">
-        <h2>Transformando Vidas Através da Educação</h2>
-        <p>
-          Há mais de 15 anos levando esperança e oportunidades para comunidades
-          em situação de vulnerabilidade social.
-        </p>
-        <div class="cta">
-          <a class="btn btn-primario" href="cadastro.html"
-            >Seja um Voluntário</a
-          >
-          <a class="btn btn-secundario" href="projetos.html">Faça uma Doação</a>
-        </div>
-        <img
-          src="imagens/hero-educacao.jpg"
-          alt="Crianças sorrindo em sala de aula durante atividade educacional"
-          loading="lazy"
-          width="800"
-          height="450"
-        />
-      </section>
+  <!-- JS -->
+  <script src="js/theme.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
 
-      <!-- Sobre a Organização -->
-      <section>
-        <h2>Quem Somos</h2>
-        <article>
-          <h3>Nossa História</h3>
-          <img
-            src="imagens/historia-ong.jpg"
-            alt="Fundadores da ONG Esperança Solidária em evento comunitário"
-            loading="lazy"
-            width="600"
-            height="400"
-          />
-          <p>
-            Fundada em 2009, a <strong>Esperança Solidária</strong> nasceu do
-            sonho de um grupo de educadores que acreditavam no poder
-            transformador da educação. Começamos atendendo 30 crianças em uma
-            pequena sala alugada e hoje impactamos mais de 5.000 vidas
-            anualmente.
-          </p>
-          <p>
-            Nossa jornada é marcada por conquistas significativas: construção de
-            3 centros educacionais, formação de mais de 200 voluntários
-            capacitados e parcerias com 50 empresas que acreditam em nossa
-            missão.
-          </p>
-        </article>
-
-        <article>
-          <h3>Missão</h3>
-          <p>
-            Promover a educação de qualidade e a inclusão social de crianças,
-            adolescentes e adultos em situação de vulnerabilidade, desenvolvendo
-            suas potencialidades e ampliando oportunidades para uma vida digna e
-            cidadã.
-          </p>
-        </article>
-
-        <article>
-          <h3>Visão</h3>
-          <p>
-            Ser referência nacional em projetos educacionais e de inclusão
-            social, reconhecida pela excelência, transparência e impacto
-            positivo nas comunidades atendidas até 2030.
-          </p>
-        </article>
-
-        <article>
-          <h3>Valores</h3>
-          <ul>
-            <li>
-              <strong>Educação Transformadora:</strong> Acreditamos que a
-              educação é o caminho para mudanças reais e duradouras
-            </li>
-            <li>
-              <strong>Transparência:</strong> Prestamos contas de cada recurso
-              recebido e aplicado
-            </li>
-            <li>
-              <strong>Respeito à Diversidade:</strong> Valorizamos e respeitamos
-              todas as pessoas, independente de origem, raça ou credo
-            </li>
-            <li>
-              <strong>Compromisso Social:</strong> Trabalhamos incansavelmente
-              pelo bem-estar das comunidades
-            </li>
-            <li>
-              <strong>Colaboração:</strong> Construímos pontes entre pessoas,
-              empresas e instituições
-            </li>
-          </ul>
-        </article>
-      </section>
-
-      <!-- Impacto e Números -->
-      <section>
-        <h2>Nosso Impacto em Números</h2>
-        <img
-          src="imagens/impacto-social.jpg"
-          alt="Gráfico mostrando crescimento do impacto social da ONG ao longo dos anos"
-          loading="lazy"
-          width="700"
-          height="400"
-        />
-        <article>
-          <h3>Conquistas de 2024</h3>
-          <dl>
-            <dt>Pessoas Atendidas</dt>
-            <dd>5.247 beneficiários diretos em nossos programas</dd>
-            <dt>Voluntários Ativos</dt>
-            <dd>312 voluntários dedicados mensalmente</dd>
-            <dt>Projetos em Andamento</dt>
-            <dd>18 projetos ativos em 8 comunidades</dd>
-            <dt>Taxa de Aprovação Escolar</dt>
-            <dd>94% dos alunos aprovados com melhoria no desempenho</dd>
-            <dt>Inserção no Mercado</dt>
-            <dd>78% dos jovens formados conseguiram emprego em até 6 meses</dd>
-          </dl>
-        </article>
-      </section>
-
-      <!-- Equipe -->
-      <section>
-        <h2>Nossa Equipe</h2>
-        <article>
-          <h3>Liderança Comprometida</h3>
-          <p>
-            Nossa equipe é formada por profissionais apaixonados por
-            transformação social, com experiência em educação, gestão de
-            projetos sociais e desenvolvimento comunitário.
-          </p>
-          <figure>
-            <img
-              src="imagens/equipe-diretoria.jpg"
-              alt="Diretoria da ONG Esperança Solidária reunida"
-              loading="lazy"
-              width="600"
-              height="400"
-            />
-            <figcaption>
-              Diretoria Executiva - Reunião de Planejamento Estratégico 2024
-            </figcaption>
-          </figure>
-
-          <h4>Diretoria Executiva</h4>
-          <ul>
-            <li>
-              <strong>Maria Silva</strong> - Diretora Presidente (Pedagoga, 20
-              anos de experiência)
-            </li>
-            <li>
-              <strong>João Santos</strong> - Diretor Financeiro (Contador,
-              especialista em terceiro setor)
-            </li>
-            <li>
-              <strong>Ana Costa</strong> - Coordenadora de Projetos (Assistente
-              Social)
-            </li>
-            <li>
-              <strong>Carlos Oliveira</strong> - Coordenador de Voluntários
-              (Psicólogo)
-            </li>
-          </ul>
-        </article>
-      </section>
-
-      <!-- Transparência -->
-      <section>
-        <h2>Transparência e Prestação de Contas</h2>
-        <article>
-          <h3>Relatórios Anuais</h3>
-          <p>
-            Acreditamos que a transparência é fundamental para construir
-            confiança. Todos os nossos relatórios financeiros e de atividades
-            estão disponíveis publicamente.
-          </p>
-          <h4>Documentos Disponíveis</h4>
-          <ul>
-            <li>
-              <a href="#" download
-                >Relatório de Atividades 2024 (PDF - 2.5MB)</a
-              >
-            </li>
-            <li>
-              <a href="#" download>Balanço Financeiro 2024 (PDF - 1.8MB)</a>
-            </li>
-            <li>
-              <a href="#" download>Estatuto Social Atualizado (PDF - 850KB)</a>
-            </li>
-            <li>
-              <a href="#" download
-                >Certificado de Utilidade Pública (PDF - 450KB)</a
-              >
-            </li>
-          </ul>
-          <h4>Distribuição de Recursos 2024</h4>
-          <img
-            src="imagens/grafico-recursos.jpg"
-            alt="Gráfico de pizza mostrando distribuição de recursos"
-            loading="lazy"
-            width="600"
-            height="400"
-          />
-          <ul>
-            <li>65% - Projetos Educacionais e Sociais</li>
-            <li>20% - Infraestrutura e Manutenção</li>
-            <li>10% - Administrativo e Gestão</li>
-            <li>5% - Captação de Recursos e Comunicação</li>
-          </ul>
-        </article>
-      </section>
-
-      <!-- Contato -->
-      <section>
-        <h2>Entre em Contato</h2>
-        <article>
-          <h3>Fale Conosco</h3>
-          <address>
-            <p><strong>Sede Administrativa</strong></p>
-            <p>
-              Rua da Esperança, 1234 - Centro<br />São Paulo - SP<br />CEP:
-              01234-567
-            </p>
-            <p>
-              <strong>Telefone:</strong>
-              <a href="tel:+551133334444">(11) 3333-4444</a>
-            </p>
-            <p>
-              <strong>WhatsApp:</strong>
-              <a href="https://wa.me/5511999998888">(11) 99999-8888</a>
-            </p>
-            <p>
-              <strong>E-mail:</strong>
-              <a href="mailto:contato@esperancasolidaria.org.br"
-                >contato@esperancasolidaria.org.br</a
-              >
-            </p>
-            <p>
-              <strong>Horário de Atendimento:</strong><br />Seg a Sex: 8h–18h |
-              Sáb: 9h–13h
-            </p>
-          </address>
-          <h4>Redes Sociais</h4>
-          <ul>
-            <li>
-              <a
-                href="https://facebook.com/esperancasolidaria"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Facebook</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://instagram.com/esperancasolidaria"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Instagram</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://linkedin.com/company/esperancasolidaria"
-                target="_blank"
-                rel="noopener noreferrer"
-                >LinkedIn</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://youtube.com/@esperancasolidaria"
-                target="_blank"
-                rel="noopener noreferrer"
-                >YouTube</a
-              >
-            </li>
-          </ul>
-        </article>
-      </section>
-    </main>
-
-    <!-- Rodapé -->
-    <footer>
-      <div class="container">
-        <p>&copy; 2024 Esperança Solidária - Todos os direitos reservados</p>
-        <p>
-          CNPJ: 12.345.678/0001-90 | Utilidade Pública Municipal: Lei nº
-          12.345/2010
-        </p>
-        <nav>
-          <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="projetos.html">Projetos</a></li>
-            <li><a href="cadastro.html">Cadastre-se</a></li>
-          </ul>
-        </nav>
-      </div>
-    </footer>
-
-    <!-- JS -->
-    <script src="js/main.js" defer></script>
-  </body>
 </html>

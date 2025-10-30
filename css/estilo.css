@@ -41,6 +41,93 @@ main,
   padding: 0 16px;
 }
 
+:root {
+  /* Variáveis do tema claro (padrão) */
+  --bg: #ffffff;
+  --surface: #f8fafc;
+  /* cartão / áreas */
+  --text: #0f172a;
+  --muted: #64748b;
+  --primary: #2563eb;
+  --accent: #16a34a;
+  --link: var(--primary);
+  --card-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+  --transition-fast: 200ms ease;
+  color-scheme: light;
+  /* informa navegadores */
+}
+
+/* Tema escuro ativado por atributo data-theme="dark" */
+:root[data-theme="dark"] {
+  --bg: #0b1220;
+  --surface: #0f1724;
+  --text: #e6eef8;
+  --muted: #94a3b8;
+  --primary: #60a5fa;
+  --accent: #4ade80;
+  --link: var(--primary);
+  --card-shadow: 0 6px 18px rgba(2, 6, 23, 0.6);
+  --transition-fast: 200ms ease;
+  color-scheme: dark;
+}
+
+/* Se o usuário preferir dark no sistema, aplica por padrão */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --bg: #0b1220;
+    --surface: #0f1724;
+    --text: #e6eef8;
+    --muted: #94a3b8;
+    --primary: #60a5fa;
+    --accent: #4ade80;
+    --link: var(--primary);
+    --card-shadow: 0 6px 18px rgba(2, 6, 23, 0.6);
+    color-scheme: dark;
+  }
+}
+
+/* Regras globais usando as variáveis */
+html,
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+a {
+  color: var(--link);
+}
+
+.header,
+.nav,
+.card,
+.footer {
+  background: var(--surface);
+  transition: background var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.card {
+  box-shadow: var(--card-shadow);
+}
+
+/* Botão de toggle básico (ajuste visual conforme seu tema) */
+#theme-toggle {
+  background: transparent;
+  border: 1px solid rgba(127, 140, 141, 0.12);
+  color: var(--text);
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+
+#theme-toggle:focus {
+  outline: 3px solid rgba(37, 99, 235, 0.18);
+  outline-offset: 3px;
+}
+
 header nav {
   display: flex;
   align-items: center;
