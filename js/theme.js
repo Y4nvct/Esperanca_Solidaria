@@ -1,3 +1,55 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const root = document.documentElement;
+
+  function getSystemPrefersDark() {
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+
+  function applyTheme(theme) {
+    if (theme === 'dark') {
+      root.setAttribute('data-theme', 'dark');
+    } else {
+      root.removeAttribute('data-theme');
+    }
+    updateToggleButton();
+  }
+
+  function currentTheme() {
+    const saved = localStorage.getItem('theme');
+    if (saved === 'dark' || saved === 'light') return saved;
+    return getSystemPrefersDark() ? 'dark' : 'light';
+  }
+
+  function toggleTheme() {
+    const next = currentTheme() === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('theme', next);
+    applyTheme(next);
+  }
+
+  function updateToggleButton() {
+    const btn = document.getElementById('theme-toggle');
+    if (!btn) return;
+    const isDark = currentTheme() === 'dark';
+    btn.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+    btn.textContent = isDark ? 'Tema: Escuro 🌙' : 'Tema: Claro ☀️';
+    btn.title = 'Trocar tema';
+  }
+
+  const btn = document.getElementById('theme-toggle');
+  if (btn) {
+    btn.addEventListener('click', () => toggleTheme());
+  }
+
+  // Aplica tema inicial
+  applyTheme(currentTheme());
+
+  // Observa mudanças do sistema quando não há preferência salva
+  if (!localStorage.getItem('theme') && window.matchMedia) {
+    const mq = window.matchMedia('(prefers-color-scheme: dark)');
+    mq.addEventListener?.('change', () => applyTheme(currentTheme()));
+  }
+});
+
 // js/theme.js
 
 (function () {
