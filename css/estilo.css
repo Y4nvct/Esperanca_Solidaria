@@ -39,11 +39,35 @@ body {
   line-height: 1.6;
 }
 
+/* Transições suaves de tema */
+html,
+body,
+header,
+footer,
+main,
+section,
+.container,
+button,
+a,
+input,
+select,
+textarea {
+  transition: background-color 200ms ease, color 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
+}
+
 /* Layout geral */
 header,
 footer {
   background: var(--branco);
   border-bottom: 1px solid var(--cinza-200);
+}
+
+/* Header sticky e sombra sutil */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
 }
 
 header nav,
@@ -176,6 +200,46 @@ header a:focus {
   outline: none;
 }
 
+/* Botão de tema (ícone) */
+#theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid var(--cinza-200);
+  background: transparent;
+  color: var(--cinza-700);
+  cursor: pointer;
+}
+
+#theme-toggle:hover {
+  background: var(--cinza-100);
+}
+
+#theme-toggle:focus {
+  outline: 2px solid color-mix(in srgb, var(--azul) 40%, transparent);
+  outline-offset: 2px;
+}
+
+#theme-toggle svg {
+  display: block;
+}
+
+/* Utilitário de acessibilidade */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* Botões Genéricos */
 
 .btn {
@@ -184,7 +248,7 @@ header a:focus {
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
-
+  border: 1px solid transparent;
 }
 
 .btn-primario {
@@ -196,6 +260,11 @@ header a:focus {
   filter: brightness(0.95);
 }
 
+.btn-primario:focus {
+  outline: 2px solid color-mix(in srgb, var(--azul) 40%, transparent);
+  outline-offset: 2px;
+}
+
 .btn-secundario {
   background: var(--verde);
   color: #fff;
@@ -203,6 +272,11 @@ header a:focus {
 
 .btn-secundario:hover {
   filter: brightness(0.95);
+}
+
+.btn-secundario:focus {
+  outline: 2px solid color-mix(in srgb, var(--verde) 40%, transparent);
+  outline-offset: 2px;
 }
 
 /* HERO */
