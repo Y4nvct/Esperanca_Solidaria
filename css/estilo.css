@@ -169,7 +169,8 @@ a {
 header nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 12px;
   height: 64px;
 }
 
@@ -177,6 +178,7 @@ header h1 {
   font-size: 1.25rem;
   color: var(--azul);
   margin: 0;
+  margin-right: auto; /* empurra itens seguintes para a direita */
 }
 
 header ul {
@@ -283,7 +285,7 @@ header a:focus {
 
 .hero {
   padding: 32px 16px 24px;
-  background: linear-gradient(0deg, #fff, #f8fbff);
+  background: var(--cinza-100);
 }
 
 .hero h2 {
@@ -308,6 +310,11 @@ header a:focus {
   height: auto;
   border-radius: 12px;
   margin-top: 16px;
+}
+
+/* Ajusta contraste de imagens no tema escuro (sutil) */
+[data-theme="dark"] .hero img {
+  filter: brightness(0.9) contrast(1.05);
 }
 
 /* Seções */
